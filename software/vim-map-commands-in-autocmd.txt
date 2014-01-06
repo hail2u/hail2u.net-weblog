@@ -4,7 +4,7 @@ Vimの自動コマンド内におけるマップコマンド
 
 <p>修正するためには直接書き換える必要があった。<code>after/</code>以下でアバウトに書いた場合、他で構文強調が壊れる(<code>augroup</code>とかで)。</p>
 
-<p class="seealso">Download: <a href="https://gist.github.com/hail2u/7552924#file-vim-vim-patch"><code>vim.vim.patch</code></a></p>
+<p class="seealso">Download: <a href="/pub/vim.vim.patch"><code>vim.vim.patch</code></a></p>
 
 <figure>
   <img src="/images/blog/vim-map-commands-in-autocmd.png" alt="デフォルトでは強調されないnnoremapが正常に強調されるようになっている">

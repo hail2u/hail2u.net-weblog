@@ -24,7 +24,7 @@ JekyllみたいなのとWordPressみたいなのの組み合わせ
 
 <hr>
 
-<p>このウェブサイトは<a href="http://handlebarsjs.com/">Handlebars.js</a>を使った<a href="https://gist.github.com/hail2u/6310613">HTML生成Gruntタスク</a>と手書きHTMLと<a href="http://blosxom.sourceforge.net/">Blosxom</a>というハイブリッドな構成になっている。</p>
+<p>このウェブサイトは<a href="http://handlebarsjs.com/">Handlebars.js</a>を使った<a href="/blog/coding/generate-files-grunt-task-using-handlebars-js.html">HTML生成Gruntタスク</a>と手書きHTMLと<a href="http://blosxom.sourceforge.net/">Blosxom</a>というハイブリッドな構成になっている。</p>
 
 <p>静的なHTMLはGruntタスク、半ば独立した形のDocumentsの文書は手書き、ウェブログはBlosxomと使い分けている。Blosxomのflavour (テンプレート)も同じGruntタスクでやってるので、共通部分の変更にはあんまり手間はかからない。実際に使っているGruntタスクはもっとここに特化させた感じになっていて、フィード読ませて記事一覧吐けるようにしたりしてる。</p>
 

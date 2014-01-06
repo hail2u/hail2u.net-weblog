@@ -1,5 +1,5 @@
 Humans TXT
-<p><a href="http://humanstxt.org/">Humans TXT</a>は<a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>経由で知って、結構前にブックマークしてちょろっと書いてみたりしたんですが、流行りそうもない感じですね。でもなんとなく好きなので<a href="http://humanstxt.org/Standard.html">Quick start</a>を<a href="https://gist.github.com/1359924#file_humansttxt_standard.markdown">翻訳</a>してみたりしてます。</p>
+<p><a href="http://humanstxt.org/">Humans TXT</a>は<a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>経由で知って、結構前にブックマークしてちょろっと書いてみたりしたんですが、流行りそうもない感じですね。でもなんとなく好きなので<a href="http://humanstxt.org/Standard.html">Quick start</a>を<a href="/pub/humansttxt-standard.markdown">翻訳</a>してみたりしてます。</p>
 
 <p>このサイトのHumans TXTはこんな感じにしておきました。</p>
 
