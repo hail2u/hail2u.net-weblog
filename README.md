@@ -11,5 +11,5 @@ LICENSE
 
 
 [1]: http://blosxom.sourceforge.net/
-[2]: http://hail2u.net/
+[2]: http://hail2u.net/blog/
 [3]: http://creativecommons.org/licenses/by-nc/4.0/
