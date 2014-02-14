@@ -11,7 +11,7 @@
   <mark>&lt;figcaption&gt;— &lt;cite&gt;&lt;a href=&quot;http://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%A8&quot;&gt;引用&lt;/a&gt;&lt;/cite&gt;&lt;/figcaption&gt;</mark>
 &lt;/figure&gt;</code></pre>
 
-<p>W3CのHTML5.1では<code>blockquote</code>要素内で<code>footer</code>要素を使ってマークアップ。<code>blockquote</code>要素はsectioning rootsなので、<code>footer</code>要素を含めることができる。<a href="http://hail2u.net/blog/webdesign/citing-source-markup.html">昔</a>はこのウェブサイトでもこれでマークアップしてた。</p>
+<p>W3CのHTML5.1では<code>blockquote</code>要素内で<code>footer</code>要素を使ってマークアップ。<code>blockquote</code>要素はsectioning rootsなので、<code>footer</code>要素を含めることができる。<a href="/blog/webdesign/citing-source-markup.html">昔</a>はこのウェブサイトでもこれでマークアップしてた。</p>
 
 <pre><code class="language-html">&lt;blockquote&gt;
   &lt;p&gt;引用（いんよう、英語：citation, quotation）とは、広義には、他人の著作を自己の作品のなかで紹介する行為、先人の芸術作品やその要素を自己の作品に取り入れること。&lt;/p&gt;

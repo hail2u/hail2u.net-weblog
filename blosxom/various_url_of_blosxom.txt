@@ -6,7 +6,7 @@ blosxomのURL
 </blockquote>
 <p>というようなURLです。通常、blosxomはこういう風にアクセスするとmというディレクトリ以下のエントリの一覧を出すか、mというファイル名のエントリを表示することになります。ところがこの時、データ・ディレクトリにmで始まるディレクトリが複数あったりすると、その両方の一覧が出てきてしまうようです。例を挙げると</p>
 <blockquote>
-<p><a href="/blog/m" title="hail2u.net - Weblog - m">http://hail2u.net/blog/m</a></p>
+<p>http://hail2u.net/blog/m</p>
 </blockquote>
 <p>のように。mで始まるディレクトリに格納されている、MediaとMiscのエントリが同時に出てきているのがわかると思います。</p>
 <p>これについて作者のRaelさんは、</p>
