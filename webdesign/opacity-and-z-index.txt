@@ -2,9 +2,9 @@ opacityとz-index
 
 <figure><img src="/images/blog/opacity-and-z-index.png" alt="2012-02-03に改悪されたロゴ"></figure>
 
-<p><code>opacity</code>プロパティーで<code>1</code>以下が指定された要素はその重なり順が変化するという<a href="http://www.w3.org/TR/css3-color/#transparency">仕様があるようだ</a>。擬似要素を複数組み合わせて紙をずらして重ねたようにロゴをちょっと改悪した時に初めて知った。いつものChromeのバグかと思った……。</p>
+<p><code>opacity</code>プロパティーで<code>1</code>より下が指定された要素はその重なり順が変化するという<a href="http://www.w3.org/TR/css3-color/#transparency">仕様があるようだ</a>。擬似要素を複数組み合わせて紙をずらして重ねたようにロゴをちょっと改悪した時に初めて知った。いつものChromeのバグかと思った……。</p>
 
-<p>仕様では<code>position</code>プロパティーが<code>static</code>以外の要素で<code>opacity</code>プロパティーを<code>1</code>以下にすると<code>z-index</code>プロパティーが<code>0</code>であるとみなされるようになっている。そのためその要素で<code>z-index</code>プロパティーを<code>-1</code>にして背面に移動するようにしたり、<code>100</code>等で意識的に手前に持ってきたりするようにしている場合、その重なり順が壊れてしまう。</p>
+<p>仕様では<code>position</code>プロパティーが<code>static</code>以外の要素で<code>opacity</code>プロパティーを<code>1</code>より下にすると<code>z-index</code>プロパティーが<code>0</code>であるとみなされるようになっている。そのためその要素で<code>z-index</code>プロパティーを<code>-1</code>にして背面に移動するようにしたり、<code>100</code>等で意識的に手前に持ってきたりするようにしている場合、その重なり順が壊れてしまう。</p>
 
 <p>と、こう書くと結構単純な感じなんだけど、実際には<code>0</code>とみなされた上で新たな重なり順が作られるので、いくつかの要素をまとめて半透明にして重ねまくってたりすると、どういう重なり順になるかとてもイメージしにくい。ので余程の理由がない限りは<code>opacity</code>と<code>z-index</code>プロパティーの組み合わせには近寄らない方が良さそう。</p>
 
