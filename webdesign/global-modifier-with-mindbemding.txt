@@ -11,7 +11,7 @@ BEMでグローバルなモディファイア
 
 <p>書きにくい。そしてBEMの、ブロックが相互に依存しない利点と矛盾する。</p>
 
-<pre><code class="language-css">.article_title {
+<pre><code class="language-css">.article__title {
 }
 
 .article__title--permalink {
