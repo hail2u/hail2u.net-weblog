@@ -35,3 +35,5 @@
   RewriteRule ^(.*)$ style.css [L,R=302]
 &lt;/IfModule&gt;
 </code></pre>
+
+<p>こういう実装だとBlosxomに依存しないので、CSSファイルのパスをユニークにする仕組みさえ用意できれば、様々なCMSで実現できる。</p>
