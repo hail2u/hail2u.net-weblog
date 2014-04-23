@@ -4,7 +4,7 @@
 
 <pre><code class="language-html">&lt;head&gt;
   ...
-  &lt;link id=&quot;print-css&quot; media=&quot;only print&quot; href=&quot;/css/print.css&quot;&gt;
+  &lt;link id=&quot;print-css&quot; rel media=&quot;only print&quot; href=&quot;/css/print.css&quot;&gt;
 &lt;/head&gt;
 &lt;body&gt;
   ...
