@@ -2,7 +2,7 @@ Twitterのプロフィール画像のURL
 
 <p>Twitterのプロフィール画像のURLはもはや認証の必要なAPIでしか取得できないのかと思っていたのだけど、ちょっと探したら固定で参照できるURLを見つけた。認証なしで任意のURLのツイート数を取得できる<code>count.json</code>とかと同じで非公開の可能性が高い。</p>
 
-<pre>https://twitter.com/api/users/profile_image/{screen_name}?size=[bigger|normal|small|original]
+<pre>https://twitter.com/api/users/profile_image/{screen_name}?size=[bigger|normal|mini|original]
 </pre>
 
 <figure class="flotage-right">
