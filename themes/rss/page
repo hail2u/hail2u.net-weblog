@@ -1,3 +1,6 @@
+<!-- blosxom content_type text/html; charset=$blog_encoding -->
+
+<!-- blosxom head -->
 <?xml version="1.0" encoding="$blog_encoding"?>
 <rss version="2.0"
   xml:lang="$blog_language"
@@ -17,3 +20,21 @@
     <atom:link rel="self" type="application/rss+xml" href="$url/feed"/>
     <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc/3.0/</creativeCommons:license>
+
+<!-- blosxom date -->
+
+<!-- blosxom story -->
+    <item>
+      <title>$title</title>
+      <link>$url$path/$fn.$default_flavour</link>
+      <description>$feed::excerpt</description>
+      <author>$feed::email ($feed::name)</author>
+      <category>$categories::name</category>
+      <guid isPermaLink="true">$url$path/$fn.$default_flavour</guid>
+      <pubDate>$dw, $da $mo $yr $ti:00 $utc_offset</pubDate>
+      <content:encoded><![CDATA[$feed::encoded_body]]></content:encoded>
+    </item>
+
+<!-- blosxom foot -->
+  </channel>
+</rss>
