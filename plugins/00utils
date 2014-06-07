@@ -1,0 +1,94 @@
+# Blosxom Plugin: utils
+# Author(s): Kyo Nagashima <kyo@hail2u.net>
+# Blosxom Home/Docs/Licensing: http://www.blosxom.com/
+
+package utils;
+
+use strict;
+use vars qw($debug $path_info $canonical $story_counter $has_image $ogp_image);
+
+# --- Configurable variables -----------
+
+my $ogp_image_url = "http://hail2u.net/images/favicon-114.png";
+my $scheme = 'http://';
+my $domain = 'hail2u.net';
+
+# --- Plug-in package variables --------
+
+$debug = "Hello from Blosxom $blosxom::version.";
+$canonical = "$blosxom::url";
+$story_counter = 0;
+my $ogp_image_placeholder = '{{{utils::ogp_image_placeholder}}}';
+
+# --------------------------------------
+
+use URI::Escape qw(uri_escape);
+
+sub start {
+  $path_info = $blosxom::path_info_full;
+  $path_info =~ s!/index\.html$!/!;
+
+  if ($path_info !~ /\.$blosxom::default_flavour$/ && $blosxom::path_info_yr) {
+    $canonical .= "/$blosxom::path_info_yr";
+
+    if ($blosxom::path_info_mo) {
+      $canonical .= "/$blosxom::path_info_mo_num";
+
+      if ($blosxom::path_info_da) {
+        $canonical .= "/$blosxom::path_info_da";
+      }
+    }
+  }
+
+  $canonical .= "/$blosxom::path_info";
+
+  if ($canonical !~ /\.$blosxom::default_flavour$/) {
+    $canonical .= '/';
+    $canonical =~ s!/+$!/!g;
+  }
+
+  $ogp_image = $ogp_image_placeholder;
+
+  return 1;
+}
+
+sub story {
+  my($pkg, $path, $filename, $story_ref, $title_ref, $body_ref) = @_;
+
+  $has_image = 0;
+  $story_counter++;
+
+  $$body_ref =~ s/<p>/<p class="entry-summary" itemprop="description">/;
+
+  if ($$body_ref =~ m!<img!) {
+    $has_image = 1;
+    $ogp_image_url = $$body_ref;
+    $ogp_image_url =~ s/^.*? src="(.*?)".*?$/$1/s;
+    $ogp_image_url =~ s!^/!$scheme$domain/!;
+    $$body_ref =~ s/<img (.*?)>/<img $1 itemprop="image">/;
+  }
+
+  return 1;
+}
+
+sub last {
+  $blosxom::output =~ s/$ogp_image_placeholder/$ogp_image_url/gm;
+  $blosxom::header->{-Content_length} = length($blosxom::output);
+}
+
+sub encode_uri_component {
+  my($self, $attributes, $content) = @_;
+
+  return uri_escape($content);
+}
+
+sub strip_leading_zeros {
+  my($self, $attributes, $content) = @_;
+
+  $content =~ s/^0*//;
+
+  return $content;
+}
+
+1;
+# vim:ft=perl:
