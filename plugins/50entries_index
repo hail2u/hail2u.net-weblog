@@ -92,10 +92,6 @@ sub entries {
             return;
           }
 
-          if ($File::Find::name =~ m!^$blosxom::datadir/\.!) {
-            return;
-          }
-
           if (
             $File::Find::name =~ m!^$blosxom::datadir/(?:(.*)/)?(.+)\.$blosxom::file_extension$!
             and $2 ne 'index'
