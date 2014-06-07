@@ -1,7 +1,7 @@
 Weblog - Hail2u.net
 ===================
 
-[Blosxom][1] entry files for [Weblog - Hail2u.net][2].
+[Blosxom][1] related files for [Weblog - Hail2u.net][2].
 
 If you have any question, suggestion, or correction about these blog articles,
 please create an [issue][3].
