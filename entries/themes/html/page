@@ -101,6 +101,8 @@
           <ol>
       </?>
 
+<!-- blosxom date -->
+
 <!-- blosxom story -->
       <article<?$permalink::is_permalink ne="1"> itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" itemref="author"</?>>
         <?$utils::has_image ne="1">
@@ -192,7 +194,7 @@
     <script async src="/scripts/blog.min.js"></script>
   </body>
 </html>
-<!-- DDEEBBUUGG: $utils::debug -->
+<!-- DEBUG: $utils::debug -->
 
 <!-- blosxom back_and_forth_prev -->
 <a rel="prev" href="$back_and_forth::prev_url">
