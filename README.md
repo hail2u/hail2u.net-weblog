@@ -10,8 +10,9 @@ please create an [issue][3].
 LICENSE
 -------
 
-`*.txt` are licensed under [CC BY-NC][4], but `*.html` and `*.rss` are licensed
-under [MIT][5].
+  - `entries/*.txt`: [CC BY-NC][4]
+  - `entries/themes/*`: [MIT][5]
+  - other: see individual files
 
 [1]: http://blosxom.sourceforge.net/
 [2]: http://hail2u.net/blog/
