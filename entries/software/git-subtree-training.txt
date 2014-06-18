@@ -21,7 +21,7 @@ git subtreeの練習
 $ git subtree add --prefix=foo/ --squash subtree_origin master
 </pre>
 
-<p>取り込みたいリモート・リポジトリを<code>subtree_origin</code>として登録し、サブディレクトリ<code>foo/</code>として取り込む。<code>--squash</code>を省略すると履歴を継承できるので、サブモジュールや上述のようなリポジトリのネストから移行する場合はつけない方が良さそう。履歴が読みづらくなるのがちょっとアレだけど、<code>log</code>コマンドに<code>--date-order</code>オプションを付ければなんとかなる気がする(または<a href="http://www.sourcetreeapp.com/">SourceTree</a>で)。</p>
+<p>取り込みたいリモート・リポジトリを<code>subtree_origin</code>として登録し、サブディレクトリ<code>foo/</code>として取り込む。<del><code>--squash</code>を省略すると履歴を継承できるので、サブモジュールや上述のようなリポジトリのネストから移行する場合はつけない方が良さそう。履歴が読みづらくなるのがちょっとアレだけど、<code>log</code>コマンドに<code>--date-order</code>オプションを付ければなんとかなる気がする(または<a href="http://www.sourcetreeapp.com/">SourceTree</a>で)。</del><ins>リモートに反映させる時に死ぬので必ず<code>--squash</code>を付けるべきとした方が良さそう。</ins></p>
 
 <h2>コミット</h2>
 
