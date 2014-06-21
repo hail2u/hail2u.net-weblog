@@ -58,7 +58,7 @@ sub story {
   $has_image = 0;
   $story_counter++;
 
-  $$body_ref =~ s/<p>/<p class="entry-summary" itemprop="description">/;
+  $$body_ref =~ s/<p>/<p itemprop="description">/;
 
   if ($$body_ref =~ m!<img!) {
     $has_image = 1;
