@@ -33,8 +33,8 @@ module.exports = function (grunt) {
 
 <p>このような形で出力ファイル名を処理する関数を書いてやる。上記設定で仮に<code>rename</code>オプションがない場合、出力ファイル名は以下のような形になる。</p>
 
-<pre><code>.grunt/weblog/entries/themes/html/blog/theme.mustache
-</code></pre>
+<pre>.grunt/weblog/entries/themes/html/blog/theme.mustache
+</pre>
 
 <p><code>rename</code>オプションで指定する関数には<code>dest</code>と<code>src</code>が<em>そのまま</em>渡されるので、それを使って出力したいファイルのパスを返してやれば良い。この場合は固定で返すだけなのでハードコードしているけど、グロブから受ける場合は以下のようにして拡張子を削除したりとかする。</p>
 

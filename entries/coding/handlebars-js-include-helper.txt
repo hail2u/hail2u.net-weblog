@@ -37,9 +37,9 @@ console.log(applyTemplate(&#39;./template.hbs&#39;, {
 
 <p>の2つ。実行すると結果はこうなる。</p>
 
-<pre><code>His name is John
+<pre><samp>His name is John
 
-His girlfriend name is Jane</code></pre>
+His girlfriend name is Jane</samp></pre>
 
 <p><code>include</code>ヘルパー関数への引数で指定するテンプレート・ファイルのパスが、それを記述するテンプレート・ファイルからの相対パスにならない辺りが面倒くさいのは直した方が良さそう。</p>
 

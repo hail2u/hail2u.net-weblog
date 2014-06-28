@@ -16,8 +16,8 @@
 
 <p>こう~/.vimrcに書いておくだけで<code>gf</code>で開くことができるようになります。<code>includeexpr</code>でファイル名の先頭のスラッシュを削り、<code>path</code>に<code>;/</code>を追加して上流を探すようにすることにより、大体うまく開くことが可能になるわけです。<code>path</code>によって<code>gf</code>や<code>:find</code>などでファイルを探すパスを細かく設定できます。値の<code>;/</code>については、</p>
 
-<pre><code>:h file-searching
-</code></pre>
+<pre>:h file-searching
+</pre>
 
 <p>を参照するのが良いでしょう。</p>
 

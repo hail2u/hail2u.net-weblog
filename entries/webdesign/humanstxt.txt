@@ -3,7 +3,7 @@ Humans TXT
 
 <p>このサイトのHumans TXTはこんな感じにしておきました。</p>
 
-<pre><code>/* TEAM */
+<pre>/* TEAM */
     Owner, Developer, Publisher, Writer: Kyo Nagashima
     Facebook: https://www.facebook.com/hail2u
     Twitter: https://twitter.com/hail2u_
@@ -17,7 +17,7 @@ Humans TXT
     Standards: HTML5, CSS3, WAI-ARIA
     Components: Blosxom, Markdown, HAML, Sass, jQuery, html5shiv
     Software: Vim, Photoshop, pngcrush, OptiPNG, FileZilla
-</code></pre>
+</pre>
 
 <p>一人だけどチームですよね！TwitterやFacebookなどを載せる時にニックネームだけだったりURLだったり結構色々な書き方をされているんですけど、そもそもパースしてどうこうってものではないのでなんとなく読めそうな感じで適当に書けば良さそうです。</p>
 

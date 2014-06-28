@@ -45,8 +45,8 @@ Blosxom用Gruntプラグイン
 
 <p>日付指定などを組み合わせることも可能(のはず)。相対パスのみ許可するとGruntプラグイン側では何もすることなくて簡単なんだけど、ターミナルではともかく、エディタ等の他のプログラムから呼ぶ場合は絶対パスの方が手軽なので、プラグイン側に相対パスに変換する機能をもたせた。</p>
 
-<pre><code>$ grunt blosxom:article --file=blosxom/grunt-blosxom.txt
-</code></pre>
+<pre>$ grunt blosxom:article --file=blosxom/grunt-blosxom.txt
+</pre>
 
 <p>上記設定だと、このようなコマンドで<code>blog/blosxom/grunt-blosxom.html</code>が作成される。わかりやすい！</p>
 
