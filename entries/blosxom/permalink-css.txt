@@ -4,7 +4,7 @@
 
 <p>記事ファイルでは特別なCSSを使うかどうかのフラグのみ書く。</p>
 
-<pre><code>パーマリンクに特別なCSSを追加
+<pre><code class="language-markdown">パーマリンクに特別なCSSを追加
 <mark>meta-special_css: 1</mark>
 
 &lt;p&gt;...&lt;/p&gt;

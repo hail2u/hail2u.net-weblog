@@ -29,7 +29,7 @@ exit;
 
 <p>右クリックから使う場合は、</p>
 
-<pre><code>@echo off
+<pre><code class="language-bat">@echo off
 
 perl -S convert-to-data-uri.pl %* | clip
 </code></pre>
