@@ -5,13 +5,13 @@ Last CallったCSSグラデーションの文法
 <p><a href="http://www.w3.org/TR/2012/WD-css3-images-20120112/">Last Callの仕様</a>での<code>linear-gradient()</code>関数の文法は以下のように定義されている。</p>
 
 <blockquote>
-<pre><code>&lt;linear-gradient&gt; = linear-gradient(
-        [ [ &lt;angle&gt; | to &lt;side-or-corner&gt; ] ,]? 
+<pre>&lt;linear-gradient&gt; = linear-gradient(
+        [ [ &lt;angle&gt; | to &lt;side-or-corner&gt; ] ,]?
         &lt;color-stop&gt;[, &lt;color-stop&gt;]+
 )
 
 &lt;side-or-corner&gt; = [left | right] || [top | bottom]
-</code></pre>
+</pre>
 </blockquote>
 
 <p>&mdash; <cite><a href="http://www.w3.org/TR/2012/WD-css3-images-20120112/#linear-gradient-syntax">4.1.1 linear-gradient() syntax</a></cite></p>
