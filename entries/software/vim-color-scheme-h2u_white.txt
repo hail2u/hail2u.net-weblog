@@ -31,18 +31,18 @@ Vimカラースキーム: h2u_white
 <p>いろんな言語でのスクリーンショットを撮った。サンプルコードはsolarizedのリポジトリにある<a href="https://github.com/altercation/solarized/tree/master/utils/tests"><code>utils/test/</code></a>以下を利用。</p>
 
 <figure>
-  <img src="/images/blog/h2u_white/c.png" alt="C">
-  <img src="/images/blog/h2u_white/haskell.png" alt="Haskell">
-  <img src="/images/blog/h2u_white/html.png" alt="HTML">
-  <img src="/images/blog/h2u_white/java.png" alt="Java">
-  <img src="/images/blog/h2u_white/javascript.png" alt="JavaScript">
-  <img src="/images/blog/h2u_white/pandoc.png" alt="Pandoc (Markdown)">
-  <img src="/images/blog/h2u_white/perl.png" alt="Perl">
-  <img src="/images/blog/h2u_white/php.png" alt="PHP">
-  <img src="/images/blog/h2u_white/python.png" alt="Python">
-  <img src="/images/blog/h2u_white/ruby.png" alt="Ruby">
-  <img src="/images/blog/h2u_white/shell.png" alt="Shell">
-  <img src="/images/blog/h2u_white/tex.png" alt="TeX">
+  <img src="/images/blog/h2u_white-c.png" alt="C">
+  <img src="/images/blog/h2u_white-haskell.png" alt="Haskell">
+  <img src="/images/blog/h2u_white-html.png" alt="HTML">
+  <img src="/images/blog/h2u_white-java.png" alt="Java">
+  <img src="/images/blog/h2u_white-javascript.png" alt="JavaScript">
+  <img src="/images/blog/h2u_white-pandoc.png" alt="Pandoc (Markdown)">
+  <img src="/images/blog/h2u_white-perl.png" alt="Perl">
+  <img src="/images/blog/h2u_white-php.png" alt="PHP">
+  <img src="/images/blog/h2u_white-python.png" alt="Python">
+  <img src="/images/blog/h2u_white-ruby.png" alt="Ruby">
+  <img src="/images/blog/h2u_white-shell.png" alt="Shell">
+  <img src="/images/blog/h2u_white-tex.png" alt="TeX">
   <figcaption>Preview of h2u_white colorscheme in various programming languages</figcaption>
 </figure>
 
