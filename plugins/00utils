@@ -5,7 +5,7 @@
 package utils;
 
 use strict;
-use vars qw($debug $path_info $canonical $story_counter $has_image $ogp_image);
+use vars qw($debug $path_info $canonical $has_image $ogp_image);
 
 # --- Configurable variables -----------
 
@@ -17,7 +17,6 @@ my $domain = 'hail2u.net';
 
 $debug = "Hello from Blosxom $blosxom::version.";
 $canonical = "$blosxom::url";
-$story_counter = 0;
 my $ogp_image_placeholder = '{{{utils::ogp_image_placeholder}}}';
 
 # --------------------------------------
@@ -56,7 +55,6 @@ sub story {
   my($pkg, $path, $filename, $story_ref, $title_ref, $body_ref) = @_;
 
   $has_image = 0;
-  $story_counter++;
 
   $$body_ref =~ s/<p>/<p itemprop="description">/;
 
@@ -73,7 +71,6 @@ sub story {
 
 sub last {
   $blosxom::output =~ s/$ogp_image_placeholder/$ogp_image_url/gm;
-  $blosxom::header->{-Content_length} = length($blosxom::output);
 }
 
 sub encode_uri_component {
