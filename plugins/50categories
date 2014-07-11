@@ -6,7 +6,7 @@
 package categories;
 
 use strict;
-use vars qw($enabled $title $title_sep $name);
+use vars qw($enabled $title $title_sep $tagline $name);
 
 # --- Configuration Variables ----------
 
@@ -32,6 +32,9 @@ my $friendly_name = {
 # separater string between each name of category
 my $name_sep = "/";
 
+# tagline
+$tagline = 'Thoughts, impressions &amp; words over 10 years.';
+
 # --- Plug-in package variables --------
 
 $enabled = 0;
@@ -54,7 +57,7 @@ sub start {
 
     $title =~ s!^$name_sep!!;
     $title_sep = $str_title_sep;
-    $blosxom::blog_description =~ s/\.$/ about $title./;
+    $tagline =~ s/\.$/ about $title./;
     $blosxom::num_entries = 9999;
   }
 
