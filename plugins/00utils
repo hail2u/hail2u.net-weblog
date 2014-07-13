@@ -5,10 +5,11 @@
 package utils;
 
 use strict;
-use vars qw($debug $path_info $canonical $has_image $ogp_image);
+use vars qw($debug $path_info $canonical $has_image $card_type $ogp_image);
 
 # --- Configurable variables -----------
 
+my $card_type_name = 'summary';
 my $ogp_image_url = "http://hail2u.net/images/favicon-1024.png";
 my $scheme = 'http://';
 my $domain = 'hail2u.net';
@@ -17,6 +18,7 @@ my $domain = 'hail2u.net';
 
 $debug = "Hello from Blosxom $blosxom::version.";
 $canonical = "$blosxom::url";
+my $card_type_placeholder = '{{{utils::card_type_placeholder}}}';
 my $ogp_image_placeholder = '{{{utils::ogp_image_placeholder}}}';
 
 # --------------------------------------
@@ -46,6 +48,7 @@ sub start {
     $canonical =~ s!/+$!/!g;
   }
 
+  $card_type = $card_type_placeholder;
   $ogp_image = $ogp_image_placeholder;
 
   return 1;
@@ -55,11 +58,13 @@ sub story {
   my($pkg, $path, $filename, $story_ref, $title_ref, $body_ref) = @_;
 
   $has_image = 0;
+  $card_type_name = 'summary';
 
   $$body_ref =~ s/<p>/<p itemprop="description">/;
 
   if ($$body_ref =~ m!<img!) {
     $has_image = 1;
+    $card_type_name .= '_large_image';
     $ogp_image_url = $$body_ref;
     $ogp_image_url =~ s/^.*? src="(.*?)".*?$/$1/s;
     $ogp_image_url =~ s!^/!$scheme$domain/!;
@@ -70,6 +75,7 @@ sub story {
 }
 
 sub last {
+  $blosxom::output =~ s/$card_type_placeholder/$card_type_name/gm;
   $blosxom::output =~ s/$ogp_image_placeholder/$ogp_image_url/gm;
 }
 
