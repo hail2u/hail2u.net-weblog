@@ -9,7 +9,7 @@ use vars qw($debug $path_info $canonical $has_image $ogp_image);
 
 # --- Configurable variables -----------
 
-my $ogp_image_url = "http://hail2u.net/images/favicon-114.png";
+my $ogp_image_url = "http://hail2u.net/images/favicon-1024.png";
 my $scheme = 'http://';
 my $domain = 'hail2u.net';
 
