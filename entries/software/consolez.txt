@@ -4,7 +4,7 @@ ConsoleZ
 
 <p>ウィンドウの再利用はSettings→BehaviorにあるInstancesのチェックを外すと、二重起動で新しいタブが開かれるようになる。通常はこれで良いはず。しかしこれだと常にひとつのウィンドウしか開けなくなるので、タブが切り離しできない現状だとちょっと使いづらいこともある。なのでコマンドライン・オプションから制御する方が良い。オプションは<code>-reuse</code>。</p>
 
-<pre>Console.exe -reuse -d C:\Users\Taroh
+<pre><kbd>Console.exe -reuse -d C:\Users\Taroh</kbd>
 </pre>
 
 <p>このようにすれば既存のConsoleZのウィンドウに新しいタブが追加され、指定ディレクトリがコマンド・プロンプトで開かれる。<code>-t</code>オプションでタブ設定名を併せて指定すればBashとかでももちろん開くことができる。</p>

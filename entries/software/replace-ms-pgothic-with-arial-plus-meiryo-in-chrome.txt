@@ -57,8 +57,7 @@ Google ChromeでＭＳ ＰゴシックをArial+メイリオに置換する
 
 <p>気になる人は、</p>
 
-<pre>
-unicode-range: U+0000-10FFFF;
+<pre>unicode-range: U+0000-10FFFF;
 </pre>
 
 <p>に書き換えてください。</p>

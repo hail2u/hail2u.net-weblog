@@ -12,8 +12,7 @@ PPM version 4はGUIアプリケーション
 
 <p>なお、コマンド プロンプトで、</p>
 
-<pre>
-ppm-shell
+<pre>ppm-shell
 </pre>
 
 <p>と叩けばで従来のcommand line shellも起動することができる。</p>

@@ -31,8 +31,7 @@ exit;
 <p>本筋とは関係ないですけど、<a href="http://www.mozilla.org/products/firefox/" title="Firefox - Rediscover the web">Firefox</a>のPassword Managerでrealmを調べることができました(まぁ間違ったのを送った場合はレスポンスヘッダに正しいrealmが書かれているんですけどね)。Siteカラムの()で括られている部分。</p>
 <h2>追記@2004/09/29</h2>
 <p>とりあえずWSHでもlistsubsを叩いてみる。以下はVBScriptでのコード。</p>
-<pre>
-Set xmlHttp = WScript.CreateObject(&quot;Msxml2.XMLHTTP.3.0&quot;)
+<pre>Set xmlHttp = WScript.CreateObject(&quot;Msxml2.XMLHTTP.3.0&quot;)
 Set xmlDoc  = WScript.CreateObject(&quot;Msxml2.DOMDocument.3.0&quot;)
 
 xmlHttp.open &quot;GET&quot;, &quot;http://rpc.bloglines.com/listsubs&quot;, False, &quot;メールアドレス&quot;, &quot;パスワード&quot;

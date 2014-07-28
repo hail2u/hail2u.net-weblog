@@ -27,8 +27,7 @@ MSN Messengerから任意のブラウザを起動
 </ul>
 <p>ということになります。これでMSN Messengerから任意のブラウザを起動することができるはずです。</p>
 <p>こんな感じのレジストリファイルを作成し、ダブル・クリックしてやれば良いはず。</p>
-<pre>
-REGEDIT4
+<pre>REGEDIT4
 
 [HKEY_CLASSES_ROOT\htm.dummy]
 

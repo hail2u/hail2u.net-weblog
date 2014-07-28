@@ -45,8 +45,7 @@ weblogUpdates pingを受け付けているサーバー
 <dd>細かいことはよくわかりませんが、きっとgoo BLOGのと似たようなもんです。</dd>
 </dl>
 <p>他にもあったら教えてちょんまげ。</p>
-<pre>
-http://rpc.weblogs.com/
+<pre>http://rpc.weblogs.com/
 http://ping.blo.gs/
 http://rpc.blogrolling.com/pinger/
 http://rpc.technorati.com/rpc/ping

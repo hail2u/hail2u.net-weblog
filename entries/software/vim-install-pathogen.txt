@@ -4,26 +4,23 @@ pathogenのインストール
 
 <p>一旦~/.vim以下をコピーしてバックアップしてから中身を空にし、その後pathogenをgit cloneで拾ってくる。</p>
 
-<pre>
-$ cd ~/.vim
-$ mkdir bundle
-$ cd bundle
-$ git clone https://github.com/tpope/vim-pathogen.git
-</pre>
+<pre><samp>$ <kbd>cd ~/.vim</kbd>
+$ <kbd>mkdir bundle</kbd>
+$ <kbd>cd bundle</kbd>
+$ <kbd>git clone https://github.com/tpope/vim-pathogen.git</kbd>
+</samp></pre>
 
 <p>Windowsなので管理者としてコマンドプロンプトを起動してsymlinkを張る。</p>
 
-<pre>
-&gt; cd %USERPROFILE%\.vim
-&gt; mklink .\autoload\pathogen.vim .\bundle\vim-pathogen\autoload\pathogen.vim
-</pre>
+<pre><samp>C:&gt; <kbd>cd %USERPROFILE%\.vim</kbd>
+C:&gt; <kbd>mklink .\autoload\pathogen.vim .\bundle\vim-pathogen\autoload\pathogen.vim</kbd>
+</samp></pre>
 
 <p>として、vimを起動したらvimがpathogen見つけられませんでした……。ので普通にコピペしてインストール。</p>
 
 <p>.vimrcはこんな風にしておいた。</p>
 
-<pre>
-&quot; Windows specific
+<pre><code class="language-vim">&quot; Windows specific
 if has(&#39;win32&#39;) || has(&#39;win64&#39;)
   &quot; Reset, prepend ~/.vim and add ~/.vim/after to runtimepath
   set runtimepath&amp; runtimepath^=$HOME/.vim runtimepath+=$HOME/.vim/after
@@ -42,6 +39,6 @@ filetype plugin indent on
 
 &quot; Syntax support
 syntax on
-</pre>
+</code></pre>
 
 <p>filetype offはいらない気がする。</p>

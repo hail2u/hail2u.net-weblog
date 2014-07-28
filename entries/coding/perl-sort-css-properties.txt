@@ -595,20 +595,18 @@ sub check_order {
 
 <p>Vimでこのスクリプトを利用する場合は、パスの通ったところにsortcss.plという名前で保存し、セレクタ全体もしくはファイル全体を選択して、</p>
 
-<pre>
-!sortcss.pl
+<pre>!sortcss.pl
 </pre>
 
 <p>とすれば良い。セレクタ全体を選択(正確には中括弧の間を中括弧を含めて選択)するにはビジュアル・モードでの<kbd>a}</kbd>を使えば良いので、以下のようなキーバインドとコマンドを用意しておくと便利。</p>
 
-<pre>
-nmap gso va}:SortCSS&lt;CR&gt;
+<pre><code class="language-vim">nmap gso va}:SortCSS&lt;CR&gt;
 vmap gso a}:SortCSS&lt;CR&gt;
 
 &quot; Sort CSS properties
 &quot; :SortCSS
 command! -range=% SortCSS :&lt;line1&gt;,&lt;line2&gt;!perl -S sortcss.pl
-</pre>
+</code></pre>
 
 <p>これで<kbd>gso</kbd>でソートできる他、<code>:SortCSS</code>でもソートできる(<code>-range=%</code>なので選択していない場合はファイル全体を処理する)。CSSファイル以外ではアクティブにする必要が無いので、<code>$MYVIMRC</code>ではなく<code>$HOME/.vim/ftplugin/css.vim</code> (Windowsなら<code>$HOME\vimfiles\ftplugin\css.vim</code>)とかに書いた方が良い<a href="http://subtech.g.hatena.ne.jp/secondlife/20060831/1157012844">かも</a>。</p>
 

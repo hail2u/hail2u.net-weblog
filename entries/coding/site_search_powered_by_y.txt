@@ -8,8 +8,7 @@ Yahoo! Search Web Servicesでサイト内検索機能
 <p>と記述されているので、いわゆるフィード・リーダー以外で利用するには、Microsoftからきちんとした許可証を頂かなくてはならないっぽい。</p>
 <p>てなわけでYahoo! Search Web Servicesでやってみたわけですよ。</p>
 <p>Yahoo! Search Web Servicesは、</p>
-<pre>
-http://api.search.yahoo.com/{ServiceName}/{ServiceVersion}}/{ServiceMethod}
+<pre>http://api.search.yahoo.com/{ServiceName}/{ServiceVersion}}/{ServiceMethod}
 </pre>
 <p>というURLにパラメータで細かい指定をし、そのURLをGETするとXMLで検索結果が返ってくるというWeb Serviceなので、作業の推移は、</p>
 <ol>

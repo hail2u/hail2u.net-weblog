@@ -11,7 +11,8 @@ cmd /c set PATH=C:\strawberry\c\bin;%PATH% &amp;&amp; C:\strawberry\perl\bin\cpa
 
 <p>これを<code>cpanmw.bat</code>などとしてパスの通った所に置いておくだけ。Windowsのパス管理の仕様上、<code>cpanm.bat</code>としてそれを使わせようとするのは茨の道なので止めておいた方が良い。</p>
 
-<pre>C:\&gt; cpanmw JSON::XS</pre>
+<pre><samp>C:\&gt; <kbd>cpanmw JSON::XS</kbd>
+</samp></pre>
 
 <p>全ての引数をそのまま渡すので<code>cpanm</code>コマンドと使い方は同じ。</p>
 

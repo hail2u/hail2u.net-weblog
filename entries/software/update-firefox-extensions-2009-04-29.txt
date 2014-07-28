@@ -4,8 +4,7 @@ Firefox Extensions更新@2009/04/29
 
 <p>ロケールの切り替えとかやったことなかったので、他のロケールの確認とかどうやるのか知らなかったんだけど、</p>
 
-<pre>
-general.useragent.locale
+<pre>general.useragent.locale
 </pre>
 
 <p>を適切な値(米英語ならen－US、日本ならja)に変えてやって再起動で反映された。</p>

@@ -2,8 +2,7 @@ AutoHotkey: ホイール・スクロールを加速
 
 <p>ロジクールのマウス・ユーティリティのSetPointにはホイールによるスクロールを加速するオプションが無い(モデルによって違うのかもしれない)。加速<em>だけ</em>するソフトウェアというのもあまりなく、いくつか見つけたものは常用しているソフトウェアと干渉したりFirefoxでうまく動かなかったりしたので、単純なAutoHotkeyスクリプトを書いて誤魔化してみた。</p>
 
-<pre>
-WheelUp::
+<pre>WheelUp::
 WheelDown::
   wheeltype := A_ThisHotkey
 
@@ -28,8 +27,7 @@ WheelDown::
 
 <p>そういえば(g)Vimでは<kbd>&lt;A-Enter&gt;</kbd>にマッピングすることができなくて、FuzzyFinderから<kbd>&lt;A-Enter&gt;</kbd>で新しいタブで開くことができなかったのもAutoHotkeyで誤魔化した。</p>
 
-<pre>
-; Redirect Alt + Enter =&gt; Ctrl + L for gVim
+<pre>; Redirect Alt + Enter =&gt; Ctrl + L for gVim
 !Enter::
   WinGet, process_name, ProcessName, A
 

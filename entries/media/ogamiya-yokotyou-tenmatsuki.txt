@@ -14,8 +14,7 @@
 
 <p>関係ないけどAmazon.co.jpの個別商品リンクは、</p>
 
-<pre>
-http://www.amazon.co.jp/o/ASIN/475805245X/
+<pre>http://www.amazon.co.jp/o/ASIN/475805245X/
 </pre>
 
 <p>みたいなURLでも良いみたい。というか<a href="http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=5">Amazon E-Commerce Service</a>なんかで返ってくるURLは上記のようなURLにリダイレクトするものになってる。こっちの方が短くすっきりしてて良いかも。</p>

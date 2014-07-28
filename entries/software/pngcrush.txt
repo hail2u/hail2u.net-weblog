@@ -6,14 +6,12 @@ pngcrushでPNGファイルから不必要と思われるメタデータを削除
 
 <p>あるPNGファイル(input.png)から不必要と思われるメタデータを削除して圧縮したPNGファイル(output.png)を作成するには、</p>
 
-<pre>
-> &quot;C:\Program Files\pngcrush\pngcrush.exe&quot; -rem alla -l 9 input.png output.png
-</pre>
+<pre><samp>C:&gt; <kbd>&quot;C:\Program Files\pngcrush\pngcrush.exe&quot; -rem alla -l 9 input.png output.png</kbd>
+</samp></pre>
 
 <p>とコマンド プロンプトで実行してやれば良い。<code>-rem alla</code>と指定すると、削除してもあまり影響のないメタデータを削除してくれる(<q>removes all known ancillary chunks except for tRNS</q>)ので、<code>-rem gAMA -rem sRGB -rem tEXt</code>などと個別に指定する必要はない。<code>-l 9</code>は<code>-brute</code>でも構わないが、<code>-l 9</code>の方が速い。</p>
 
-<pre>
-@echo off
+<pre>@echo off
 
 move %1 %1.bak
 &quot;C:\Program Files\pngcrush\pngcrush.exe&quot; -rem alla -l 9 %1.bak %1
@@ -23,9 +21,8 @@ move %1 %1.bak
 
 <p>メタデータを確認したい場合は、</p>
 
-<pre>
-> &quot;C:\Program Files\pngcrush\pngcrush.exe&quot; -n -v input.png
-</pre>
+<pre><samp>C:&gt; <kbd>&quot;C:\Program Files\pngcrush\pngcrush.exe&quot; -n -v input.png</kbd>
+</samp></pre>
 
 <p>とコマンド プロンプトで実行してやれば良いが、かなり読みづらい。閲覧に関してはGUIな<a href="http://entropymine.com/jason/tweakpng/">TweakPNG</a>で行うのが良さそう。</p>
 

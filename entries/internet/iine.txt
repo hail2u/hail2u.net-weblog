@@ -37,9 +37,8 @@ iine!
 
 <p>WinShotのコマンドラインでPNGで撮影するには、</p>
 
-<pre>
-winshot.exe -D -X <em>-B</em> -F test<em>.png</em>
-</pre>
+<pre><samp>C:&gt; <kbd>winshot.exe -D -X <mark>-B</mark> -F test<mark>.png</mark></kbd>
+</samp></pre>
 
 <p>と-Bオプションでビットマップ保存にして、保存ファイル名の拡張子を.pngにするだけ。</p>
 

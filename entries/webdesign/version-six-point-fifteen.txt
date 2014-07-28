@@ -37,8 +37,8 @@ $gap:    1em;
 
 <p>リリース版のSassではまだ<a href="http://www.w3.org/TR/css3-mediaqueries/">Media Queries</a>で変数を利用することができないので、こういう書き方をするためには開発版をインストールする必要がある。</p>
 
-<pre>$ gem install --prerelease sass
-</pre>
+<pre><samp>$ <kbd>gem install --prerelease sass</kbd>
+</samp></pre>
 
 <p>開発版では<code>%foo</code>という<code>@extend</code>専用のプレースホルダー・セレクターも書けるようになったりしててとても楽しいと思うので、大体Sass覚えたよーという人は試すとライフチェンジングするはず。</p>
 

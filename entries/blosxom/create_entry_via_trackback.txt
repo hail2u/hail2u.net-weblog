@@ -33,8 +33,7 @@ TrackBackでエントリを作成
 </table>
 <p>という風にしてやるとかでいけそう。うまく書けばプラグインとしても簡単に実装できると思う(<a href="http://www.torus.jp/doc/blosxom/semi_static.html" title="半静的レンダリングプラグイン : torus solutions!">semi_static</a>みたいな感じ)けど、単独CGIの方が良いかな。</p>
 <p>TrackBack pingを送信するURLは、</p>
-<pre>
-http://example.com/tb_newpost.cgi
+<pre>http://example.com/tb_newpost.cgi
 </pre>
 <p>とか固定で。</p>
 <p>こうやってTrackBackによるエントリの作成を実装したなら、ローカルにインストールした<a href="http://www.movabletype.org/" title="Movable Type Publishing Platform">Movable Type</a>なんかがフロントエンドとして使えるわけですよ。また、TrackBackはとっても単純なPOSTリクエストに過ぎないので、JavaScriptなんかで投稿スクリプトを組み、エディタから呼び出すなんてー事も簡単(多分)。</p>

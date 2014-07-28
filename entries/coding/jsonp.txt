@@ -4,8 +4,7 @@ JSONP
 
 <p>つまり、</p>
 
-<pre>
-http://example.com/data.json?jsonp=beverly_hills
+<pre>http://example.com/data.json?jsonp=beverly_hills
 </pre>
 
 <p>とリクエストしたら、</p>
@@ -19,8 +18,7 @@ http://example.com/data.json?jsonp=beverly_hills
 
 <p>と返す。また、</p>
 
-<pre>
-http://example.com/data.json?jsonp=beverly_hills%5B90210%5D
+<pre>http://example.com/data.json?jsonp=beverly_hills%5B90210%5D
 </pre>
 
 <p>とリクエストしたら、</p>

@@ -17,8 +17,7 @@ Amazon.co.jpの新しいアソシエイト・ツール: インスタントスト
 
 <p>多くのアサマシ・ツールやBookmarkletなどで作成される従来の個別商品リンクの代わりに、インスタントストアの詳細ページへのリンクを利用するのは良いかも。詳細ページのURLは、</p>
 
-<pre>
-http://astore.amazon.co.jp/{アソシエイトID}/detail/{ASINコード}
+<pre>http://astore.amazon.co.jp/{アソシエイトID}/detail/{ASINコード}
 </pre>
 
 <p>という構造になっている(最後にスラッシュを付けない)ので、<a href="http://astore.amazon.co.jp/hail2unet-22/detail/4873110270" title="asamashi dot net">簡単に作れる</a>。今までの個別商品リンクの作成と同じくらいの手間。Amazon.co.jp本家よりもシンプルでいて情報量はそこそこなので見やすい。</p>

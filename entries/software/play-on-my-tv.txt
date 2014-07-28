@@ -4,8 +4,7 @@
 
 <p>どうやら、</p>
 
-<pre>
-regsvr32 /u nvcpl.dll
+<pre>regsvr32 /u nvcpl.dll
 </pre>
 
 <p>とか謎の呪文を唱えてやると消える模様。これによってコントロールパネルからNVIDIA nView Desktop Managerが消えるとか画面のプロパティから辿ったグラフィック・カードの設定画面が消えるとかそういうことは無い。</p>

@@ -1,7 +1,6 @@
 RssRolling via E-Mail
 <p><a href="http://naoya.dyndns.org/%7Enaoya/rssrolling/" title="RssRolling">RssRolling</a>の<a href="http://naoya.dyndns.org/%7Enaoya/rssrolling/index.rdf" title="RssRollingのRSSファイル">RSSファイル</a>からdescriptionやら更新時刻も含め、定期的にまとめてメールで受信できるようにしてみたり。各記事は、</p>
-<pre>
-&gt;   hail2u.net - Weblog
+<pre>&gt;   hail2u.net - Weblog
 &gt; &gt; なぜかBTEパワープレイ中
 http://hail2u.net/blog/media/better_than_ezra.html
 僕の中でBetter Than Ezraが来てます。前から好きだったんですが、最近になっ

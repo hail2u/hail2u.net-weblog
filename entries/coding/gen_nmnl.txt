@@ -4,8 +4,7 @@ gen_nmnl
 <p>まぁいいけど。</p>
 <p><a href="http://koti.welho.com/hylinen/apollo/" title="Apollo - Sound quality is not skinnable.">Apollo</a>では動かない罠。<code>quit</code>のところでエラるな。Apolloのせいかプラグインのせいかわからん・・・。</p>
 <p>てか、</p>
-<pre>
-function GetWinampFilename: String;
+<pre>function GetWinampFilename: String;
 var
   hWinamp: THandle;
   iPos: Integer;

@@ -38,8 +38,7 @@
 
 <h2><code>text-shadow</code>の文法</h2>
 
-<pre>
-text-shadow: length length length color;
+<pre>text-shadow: length length length color;
 text-shadow: color length length length;
 </pre>
 

@@ -18,8 +18,7 @@ blosxom plugin: ufyu
 
 <p>と作ってあるけど、わかりづらい。<code>%s</code>はparamそのままで、<code>%es</code>はparamをURLエスケープするよとかそんな感じ。amazonモードを使いたい場合は、</p>
 
-<pre>
-[[amazon:Hoobastank - Every Man For Himself:<em>B000EXO9YG</em>]]
+<pre>[[amazon:Hoobastank - Every Man For Himself:<em>B000EXO9YG</em>]]
 </pre>
 
 <p>と書くと、</p>

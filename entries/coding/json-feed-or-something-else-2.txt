@@ -8,8 +8,7 @@ JSONフィードとか何とか #2
 
 <h2>content_type.json</h2>
 
-<pre>
-text/javascript
+<pre>text/javascript
 </pre>
 
 <h2>head.json</h2>

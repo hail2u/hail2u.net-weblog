@@ -6,8 +6,7 @@ Firefox extension: Change Profile 0.1
 
 <p>次に考えたのはFirefoxが起動時に読んでいるProfiles.iniをプロファイル・マネージャが立ち上がるように書き換えて、再起動してやるという手法。Profiles.iniは、</p>
 
-<pre>
-[General]
+<pre>[General]
 StartWithLastProfile=1
 
 [Profile0]

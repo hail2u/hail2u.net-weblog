@@ -4,7 +4,8 @@ Bower化してた
 
 <p>プロダクションで<em>そのまま</em>使われる可能性があるJavaScriptやCSSのライブラリと違って、開発中にしか使われないようなSassのパーシャルなんかでは<code>main</code>は指定する必要がなさそう。インストールについても<code>--save-dev</code>オプションを使い<code>devDependencies</code>の方に追加されるようにREADME等で書いておくと良いような気がする。</p>
 
-<pre>$ bower install --save-dev modularized-normalize-scss</pre>
+<pre><samp>$ <kbd>bower install --save-dev modularized-normalize-scss</kbd>
+</samp></pre>
 
 <p>仕様では<code>version</code>は必須になっていないけど、ライブラリの<code>bower.json</code>では必須なんじゃないかと思う。プロダクトの<code>bower.json</code>ではあってもなくても良いので必須になってないだけっぽい。</p>
 

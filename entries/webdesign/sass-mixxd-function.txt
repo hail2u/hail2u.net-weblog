@@ -30,15 +30,15 @@ body {
 
 <p><code>mix()</code>で小数が通るということに気づいて「うわ無駄なことした……」とか一瞬思ったんですが、そんなことはなかったので良かったです。</p>
 
-<pre>$ sass -i
-&gt;&gt; mix(black, white, 0.1)
+<pre><samp>$ <kbd>sass -i</kbd>
+&gt;&gt; <kbd>mix(black, white, 0.1)</kbd>
 #fefefe
-&gt;&gt; mix(black, white, 0.1%)
+&gt;&gt; <kbd>mix(black, white, 0.1%)</kbd>
 #fefefe
-&gt;&gt; mix(black, white, 0.9)
+&gt;&gt; <kbd>mix(black, white, 0.9)</kbd>
 #fcfcfc
-&gt;&gt; mix(black, white, 0.9%)
+&gt;&gt; <kbd>mix(black, white, 0.9%)</kbd>
 #fcfcfc
-</pre>
+</samp></pre>
 
 <p>インタラクティブ・モードで試すとこういう感じなので、通ることは通るんですが%とみなされている感じですね。エラー吐かないのはバグでしょう。</p>

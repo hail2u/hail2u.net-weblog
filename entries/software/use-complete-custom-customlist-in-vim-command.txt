@@ -4,8 +4,7 @@ Vimのcommandで-complete=custom(list)を使う
 
 <p>補完のために適当なファイル(行ごとに補完したい単語が並べたいわゆる辞書ファイル)を用意してやるというありがちなケースでは、<code>readfile()</code>で<code>list</code>が返ってくるので特に簡単だった。例えば各行にメールアドレスが並んでいる<code>$HOME/addressbook.txt</code>というファイルがあるとすると、以下のようなカスタム補完関数で絞り込みつつ補完できるようになる。</p>
 
-<pre>
-function! ListMailAddress(A, L, P)
+<pre><code class="language-vim">function! ListMailAddress(A, L, P)
   let addresses = readfile(expand(&#39;$HOME/addressbook.txt&#39;))
   let matches = []
 
@@ -19,14 +18,13 @@ function! ListMailAddress(A, L, P)
 endfunction
 
 command! -nargs=1 -complete=customlist,ListMailAddress Mail :execute &#39;! start mailto:&#39; . &lt;args&gt;
-</pre>
+</code></pre>
 
 <p>第一引数で入力済みの文字列を拾えるので、それで適当に絞り込みをかけるだけ。簡単！<code>shellescape()</code>してるのはメールアドレスの<code>@</code>でアレなことになるからなので、そういうのが無いのならもっと簡単に書ける。第二引数はコマンドラインで入力されたすべての文字列、第三引数がカーソル位置だが、両者の使い道は思いつかなかった……。第二引数は複数のコマンドで補完関数を共有する時とかに使うのかなぁ。</p>
 
 <p>デフォルトのコマンドラインの補完モード(<code>wildmode</code>)は、コマンド・プロンプトの補完と似た感じのシンプルなもの(<code>statusline</code>に表示される候補を次々と選択していくもの)でちょっと使いづらい感じだったが、色々試して、</p>
 
-<pre>
-set wildmode=longest,list
-</pre>
+<pre><code class="language-vim">set wildmode=longest,list
+</code></pre>
 
 <p>というbashな感じに落ち着いた。<code>list</code>を入れとくと<code>fun &lt;SNR&gt;</code>の後に<kbd>&lt;Tab&gt;</kbd>でスクリプト番号付きの関数が一覧出来たりとか(どうでも良い)。<code>wildmode</code>の設定はちょっと解りづらかった……。</p>

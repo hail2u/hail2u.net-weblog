@@ -28,7 +28,7 @@ git commitするGruntタスク
 
 <p><code>--file</code>オプションなどでコミットしたいファイルを指定してタスクを実行すれば良い。オプションの名前はタスク設定の書き方に依存するので何でも良い。この設定例でなんとなく想像がつくように、<a href="https://github.com/hail2u/hail2u.net-weblog">ウェブログの記事のGitリポジトリ</a>を叩くのに使っている。今までGitのフックでGrunt叩いてたけど逆の方が良さそうかな、と<a href="http://nicolasgallagher.com/simple-git-deployment-strategy-for-static-sites/">Gitを使った静的ウェブサイトのデプロイ</a>を読んで影響されたので。</p>
 
-<pre>$ grunt gitcommit:publish --file=/path/to/foo/bar.txt
-</pre>
+<pre><samp>$ <kbd>grunt gitcommit:publish --file=/path/to/foo/bar.txt</kbd>
+</samp></pre>
 
 <p>Nodeの<a href="http://nodejs.org/api/path.html">pathモジュール</a>を使って相対パスに変換するようになっているので、ファイルの指定は絶対パスでも相対パスでも大丈夫。</p>

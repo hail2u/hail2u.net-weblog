@@ -90,8 +90,7 @@ SimpldR: livedoor Readerをシンプルに
 
 <p>アプリケーションのショートカットの作成は、とりあえず普通にChromeでldRを開いてページ メニューからアプリケーションのショートカットを作成を実行し、デスクトップ等に作られたショートカットのプロパティを開き、スクリーンショットのように</p>
 
-<pre>
-...\chrome.exe&quot; <em>--enable-user-scripts</em> --app=http://reader.livedoor.com/reader/
+<pre>...\chrome.exe&quot; <em>--enable-user-scripts</em> --app=http://reader.livedoor.com/reader/
 </pre>
 
 <p>と<code>--enable-user-scripts</code>を追加してやれば良い。Chromiumとかの話はよく知らないけど似たような感じでできるらしい。</p>

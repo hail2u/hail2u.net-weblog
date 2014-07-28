@@ -3,8 +3,7 @@
 <p>マクロを起動するとポインタの位置に、</p>
 <figure><img src="/images/blog/insertdatetime.png" alt="日付けと時刻を挿入マクロのポップアップメニュー"></figure>
 <p>という感じに、現在時刻をそれぞれの形式に変換したものがメニュー項目になってポップアップします。カーソル位置にポップアップさせたい場合は、11行目を、</p>
-<pre>
-menuarray $item, 3;
+<pre>menuarray $item, 3;
 </pre>
 <p>に書き換えるだけ。</p>
 <p><a href="/archives/#hidemarumacro" title="hail2u.net - Archives">Archivesの秀丸マクロ</a>にも追加しておいたり。</p>

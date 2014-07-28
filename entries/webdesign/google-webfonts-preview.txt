@@ -16,11 +16,10 @@ Google Web Fontsの全書体をプレビュー
 
 <p>関係ないけど<code>style</code>要素に<code>contenteditable</code>属性を追加して実現するCSSのライブ編集機能(<a href="http://css-tricks.com/show-and-edit-style-element/">元ネタ</a>)は既存のスタイルしか変更できないようだ。つまり、</p>
 
-<pre>
-&lt;style contenteditable&gt;body {
+<pre><code class="language-html">&lt;style contenteditable&gt;body {
   background-color: green;
 }&lt;/style&gt;
-</pre>
+</code></pre>
 
 <p>だと<code>background-color</code>プロパティしかリアルタイムに変更できない。覚えておく……必要は全くなさそう。</p>
 

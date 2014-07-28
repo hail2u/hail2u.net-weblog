@@ -17,8 +17,7 @@ MSN Messenger 6.0のタブに
 &lt;/tab&gt;
 </code></pre>
 <p>ConfigCache.Xmlのありかは人によって違うと思われます。Windows 2000だと、</p>
-<pre>
-%UserProfile%\Application Data\Microsoft\MSN Messenger
+<pre>%UserProfile%\Application Data\Microsoft\MSN Messenger
 </pre>
 <p>以下のサブフォルダのどれかにあります。ランダムな数字の羅列のフォルダ名はず。</p>
 <p>書き換えるときは、MSN Messengerを終了させてから行うことと、ConfigCache.Xmlのバックアップは取っておくことに気をつけてください。まぁ、何かあっても責任はとりませんが。もちろん、タブを表示できるようにしておかなければならないので、MSN Messengerのオプション設定で、</p>

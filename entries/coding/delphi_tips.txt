@@ -1,7 +1,6 @@
 Delphi小ネタ
 <p>日記書くネタが無いので。ロングファイルネームをショートファイルネームにするのは、ExtractShortPathName()で一発なんですが、逆が無かったりする。で、書くわけさ。</p>
-<pre>
-function ExtractLongPathName(FileName: TFileName): String;
+<pre>function ExtractLongPathName(FileName: TFileName): String;
 var
   sr : TSearchRec;
 begin

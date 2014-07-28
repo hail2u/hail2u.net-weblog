@@ -8,8 +8,7 @@ RssMemoとMenuExt
 <p>Bookmarkletでもほとんど動作は同じになります。</p>
 <p>ま、こんなもんで。</p>
 <p>一応、レジストリへの登録サンプルコードも書いておきます。*絶対に*そのまま使わないでください。</p>
-<pre>
-REGEDIT4
+<pre>REGEDIT4
 
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\選択文字列をRssMemoでメモ]
 @=&quot;C:\\Program Files\\IEMenuExt\\html\\rssmemo.html&quot;

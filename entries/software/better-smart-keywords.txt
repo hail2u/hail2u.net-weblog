@@ -44,8 +44,7 @@
 
 <p><a href="http://hail2u.github.io/better-smart-keywords.html">適当なHTMLファイル</a>を用意してやれば<code>Keyword.URL</code>からもいける。こっちの方がキーワードの管理がしやすく入力もしやすいが、置く場所を考えなくちゃならないのがネック。とりあえずGitHubに置いておいた。<code>Keyword.URL</code>には以下のように指定する。</p>
 
-<pre>
-http://hail2u.github.io/better-smart-keywords.html<em>?</em>
+<pre>http://hail2u.github.io/better-smart-keywords.html<em>?</em>
 </pre>
 
 <p>最後の<em>?</em>を忘れるとうまく動かない。これだとロケーション・バーから「<em>nsILocalFile mdc</em>」などとスマートに検索することができる。キーワードを省略した場合もGoogleで検索するようになっているので、デフォルトの<code>Keyword.URL</code>の上位互換。ついさっき作ったので使い勝手はまだ良くわからないけど、なかなか良さそうな予感はする。</p>

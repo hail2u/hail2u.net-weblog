@@ -8,8 +8,7 @@ PATH_INFO問題
 <p>http://hail2u.net/blog/?path=/2004/01/</p>
 </blockquote>
 <p>という感じで閲覧することになります。Permanent linkの書き方は、</p>
-<pre>
-$url?path=/$yr/$mo_num/$da#$fn
+<pre>$url?path=/$yr/$mo_num/$da#$fn
 </pre>
 <p>で、いけそうです。エントリごとのPermanent linkはどう作るんだろうな・・・。</p>
 <p>PATH_INFO前提なプラグインが多いと思うので、ひとつひとつ書き換え無ければならないと思いますが、PATH_INFO問題でblosxomを避けていた人は試してみると良いかと。</p>

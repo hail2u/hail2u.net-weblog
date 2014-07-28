@@ -4,8 +4,8 @@ JavaScriptとYQLでReadabilityの短縮URLを作る
 
 <p>APIは認証不要の単純なHTTPリクエストで叩きます。</p>
 
-<pre>$ curl https://readability.com/api/shortener/v1/urls -d url=http://hail2u.net/documents/diveintohtml5-semantics.html
-</pre>
+<pre><samp>$ <kbd>curl https://readability.com/api/shortener/v1/urls -d url=http://hail2u.net/documents/diveintohtml5-semantics.html</kbd>
+</samp></pre>
 
 <p>cURLで短縮URLの作成APIを叩く場合はこのようにリソースに<code>url</code>パラメータとして任意のURLを<em>POST</em>で投げるわけです。レスポンスはJSONで返ってきます。</p>
 

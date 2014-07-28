@@ -21,6 +21,6 @@ $pages = int($pages + 1) unless $pages == int($pages);
 if (($page + 1) <= $pages) {
 ...
 }
-</pre>
+</code></pre>
 <p>こうだろ。どうよ！</p>
 <p>正直、挙動を大幅に変えてたりするので、paginateでは問題ないのかもしれないですね(弱。</p>

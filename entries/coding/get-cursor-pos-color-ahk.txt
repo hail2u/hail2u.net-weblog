@@ -4,8 +4,7 @@
 
 <p>カラーピッカーとか起動したくないし、常駐なんてもってのほか！みたいな人なので、<kbd>Win</kbd>+<kbd>C</kbd>でカーソル位置の色を取得してツールチップで表示とクリップボードへのコピーを行う簡単なAutoHotkeyスクリプトを書いて愛用している。</p>
 
-<pre>
-; Win+C: Get Cursor Position Color
+<pre>; Win+C: Get Cursor Position Color
 #c::
   MouseGetPos, MouseX, MouseY
 

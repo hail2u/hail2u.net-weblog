@@ -4,14 +4,12 @@ MEGAUPLOADから簡単にダウンロード
 
 <p>URLの細工はものすごく簡単なもので、元のURLが、</p>
 
-<pre>
-http://www.megaupload.com/?d=XXXXXXXX
+<pre>http://www.megaupload.com/?d=XXXXXXXX
 </pre>
 
 <p>なら、</p>
 
-<pre>
-http://www.megaupload.com/<em>mgr_dl.php</em>?d=XXXXXXXX
+<pre>http://www.megaupload.com/<em>mgr_dl.php</em>?d=XXXXXXXX
 </pre>
 
 <p>と変更するだけ。こう細工するとCAPTCHAの入力と待ち時間をまとめて飛ばしてダウンロードが始まる(ダウンロードのリンクをクリックする必要すらない)。かなり前からあったみたい。</p>

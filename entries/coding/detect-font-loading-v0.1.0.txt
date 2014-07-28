@@ -4,7 +4,8 @@ Detect Font Loading v0.1.0
 
 <p>インストールはBower使うのが一番楽。</p>
 
-<pre>$ bower install --save detect-font-loading</pre>
+<pre><samp>$ <kbd>bower install --save detect-font-loading</kbd>
+</samp></pre>
 
 <p>使い方はライブラリ本体を読み込んで、引数にフォント名を指定して<code>DFL.detect()</code>を呼ぶのみ。</p>
 

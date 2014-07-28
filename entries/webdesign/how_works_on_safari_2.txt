@@ -13,8 +13,7 @@ Safariでどうなのさ？ #2
 <figure><img src="/images/blog/qemu_knoppix_and_konqueror.png" alt="QEMUでKnoppixを動かして、Konquerorでこのblogを表示してみた(部分図)"></figure>
 <p>と、まぁこんな感じ(部分図なのでわかりにくいけど)。</p>
 <p>バッチ・ファイルは、qemu.exeと同じ場所に置くなら、</p>
-<pre>
-@echo off
+<pre>@echo off
 
 qemu.exe -L . -m 128 -boot d -cdrom &lt;KNOPPIXのISOイメージのフルパス&gt; -user-net -enable-audio -localtime
 
@@ -22,8 +21,7 @@ exit
 </pre>
 <p>という感じでOK(多分)。</p>
 <p>普通にKNOPPIXを起動してしまうと死ぬほど重いので、KNOPPIXのブート画面で、</p>
-<pre>
-knoppix screen=800x600 desktop=wmaker
+<pre>knoppix screen=800x600 desktop=wmaker
 </pre>
 <p>としておくとかなりマシになります(参考: <a href="http://unit.aist.go.jp/it/knoppix/qemu/" title="QEMU with KNOPPIX">QEMU with KNOPPIX</a>)。</p>
 <p>Konquerorの起動には死ぬほど時間がかかるのでじっと我慢。</p>

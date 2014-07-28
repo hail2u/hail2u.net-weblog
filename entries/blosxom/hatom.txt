@@ -20,8 +20,7 @@ hAtomに対応した
 
 <p>W3C DTFでの日付表示は数値文字参照で逃げるとプラグイン不要になる。パーサー側が対応してるかどうかはかなり疑問が残るのでinterpolate_fancyを使っている場合は、</p>
 
-<pre>
-$yr-$mo_num-$da&lt;?$fn&gt;T&lt;/?&gt;$ti:00+09:00
+<pre>$yr-$mo_num-$da&lt;?$fn&gt;T&lt;/?&gt;$ti:00+09:00
 </pre>
 
 <p>とかするのも良い。</p>

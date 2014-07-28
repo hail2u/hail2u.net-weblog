@@ -6,8 +6,8 @@ git logを見やすく
 
 <p>上記スクリーンショットのような<code>git log</code>は以下のようなコマンドで実現できる。</p>
 
-<pre>$ git log --graph --pretty='format:%C(yellow)%h%Cblue%d%Creset %s %C(black bold)%an, %ar%Creset'
-</pre>
+<pre><samp>$ <kbd>git log --graph --pretty='format:%C(yellow)%h%Cblue%d%Creset %s %C(black bold)%an, %ar%Creset'</kbd>
+</samp></pre>
 
 <p><code>%d</code>で参照名(ブランチやタグ、リモートブランチ)を、<code>%an</code>でコミッターの名前を、<code>%ar</code>でコミットの相対的な日付を表示するようにして、<code>%C</code>で色を変えている。<code>%Cred</code>と<code>%Cblue</code>、<code>%Cgreen</code>以外を使う場合は<code>color.branch.*</code>オプションと同じフォーマットの<code>%C(&#x2026;)</code>を使う。僕はここを大きく読み違えたため、<code>color.branch.current</code>を設定しておいて<code>%C(current)</code>とかして参照するものと勘違いし、「うまくいかないなー」とかかなりの長期間寝ぼけていた。</p>
 

@@ -4,12 +4,12 @@ git push --delete
 
 <p>Release Noteによるとシンタックス・シュガーだということなので、</p>
 
-<pre>$ git push --delete origin foobar
-</pre>
+<pre><samp>$ <kbd>git push --delete origin foobar</kbd>
+</samp></pre>
 
 <p>が、</p>
 
-<pre>$ git push origin :foobar
-</pre>
+<pre><samp>$ <kbd>git push origin :foobar</kbd>
+</samp></pre>
 
 <p>と完全に等価ということみたい。はー覚えやすい。</p>

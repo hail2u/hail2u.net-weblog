@@ -16,14 +16,12 @@
 
 <p>「送る」を右クリックメニューから削除するには、レジストリの以下のキーを開き、</p>
 
-<pre>
-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\Send To
+<pre>HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\Send To
 </pre>
 
 <p>その既定の値の頭に「;」を付けるというのが一番良いと思う。Windows XPでは以下のようになる。</p>
 
-<pre>
-;{7BA4C740-9E81-11CF-99D3-00AA004AE837}
+<pre>;{7BA4C740-9E81-11CF-99D3-00AA004AE837}
 </pre>
 
 <p>こうしておけば、頭から;を削除するだけですぐ戻せるので安心。</p>

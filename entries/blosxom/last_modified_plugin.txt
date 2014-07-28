@@ -26,8 +26,7 @@ last_modified plugin
 <p>公開ファイルも使用中のもの相当に差し替えておきました。</p>
 <h2>追記 #2@2004/09/04</h2>
 <p>Internet Explorerは、</p>
-<pre>
-If-Modified-Since: Fri, 03 Sep 2004 19:54:17 GMT; length=55438
+<pre>If-Modified-Since: Fri, 03 Sep 2004 19:54:17 GMT; length=55438
 </pre>
 <p>てな感じで送信してくるので、セミコロン以降が処理できておらず、<code>str2time()</code>が失敗しているのか、500エラー吐いてましたよ(lengthは前回リクエスト時のContent-Lengthっぽい感じ)。ので、最初のセミコロン以降をバッサリと切り捨ててから<code>str2time()</code>に渡すようにしてみた(日付けの間にセミコロンはきっと出てこない)。これでOKぽい。OperaなんかでもOKでした。</p>
 <p>Internet Explorerで送信しているHTTPヘッダを見るには<a href="http://www.blunck.info/iehttpheaders.html" title="blunck.info">ieHTTPHeaders</a>が良いす(Proxomitronとかで良いかも)。Operaで見る方法はないかな・・・(←教えろと控えめに書いてみました)。</p>

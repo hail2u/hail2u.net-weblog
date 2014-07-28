@@ -4,8 +4,7 @@ labs.hail2u.net/amazon/asamashi/
 
 <p>リクエストのスタイルはlabs.hail2u.net/amazon/と同じ系統で、URLのハッシュにASINコード/アソシエイトID/テンプレート・ファイルのURLを指定するというもの。例えば、</p>
 
-<pre>
-http://labs.hail2u.net/amazon/asamashi/<em>#</em>4844322222<em>:</em>hail2unet-22<em>:</em>http://labs.hail2u.net/amazon/asamashi/template.js
+<pre>http://labs.hail2u.net/amazon/asamashi/<em>#</em>4844322222<em>:</em>hail2unet-22<em>:</em>http://labs.hail2u.net/amazon/asamashi/template.js
 </pre>
 
 <p>といった感じ。強調してあるように各パラメータはコロン(:)で区切る。</p>

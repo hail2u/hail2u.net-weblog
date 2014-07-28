@@ -5,8 +5,7 @@ Bloglines Checker #5
 <li>INIファイルの構造を変更した</li>
 </ul>
 <p>TClock Lightを探す処理はこんな風に<code>function</code>で実装しました。</p>
-<pre>
-function TFrmMain.FindTclockLight: Boolean;
+<pre>function TFrmMain.FindTclockLight: Boolean;
 var
   hTClock: HWND;
 begin

@@ -32,13 +32,13 @@ Sassの変数スコープと!global
 
 <p>Sass 3.3では<a href="https://github.com/nex3/sass/blob/bd8d8db2eb2ec57b1ef851816a95ef23e68abbe9/doc-src/SASS_CHANGELOG.md#backwards-incompatibilities----must-read#">グローバル変数をローカル・コンテキストで変更しようとした時に警告(Backwards Incompatibilitiesの12個目の項目を参照)</a>が出るようになった。具体的には以下のような警告メッセージをSassコンパイラが吐く。</p>
 
-<pre>$ scss test.scss test.css
+<pre><samp>$ <kbd>scss test.scss test.css</kbd>
 DEPRECATION WARNING on line 4 of test.scss:
 Assigning to global variable &quot;$color&quot; by default is deprecated.
 In future versions of Sass, this will create a new local variable.
 If you want to assign to the global variable, use &quot;$color: #0f0 !global&quot; instead.
 Note that this will be incompatible with Sass 3.2.
-</pre>
+</samp></pre>
 
 <p>この警告を出さないようにするには<code>!global</code>フラグを使う。</p>
 

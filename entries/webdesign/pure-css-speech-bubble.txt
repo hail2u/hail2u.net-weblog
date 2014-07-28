@@ -38,10 +38,10 @@ Pure CSSな吹き出し
   position: absolute;
   bottom: -18px;
   left: 36px;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
 }
-</pre>
+</code></pre>
 
 <p>まずコンテナである<code>.bubble</code>の<code>position</code>プロパティで<code>relative</code>を指定する。これにより尻尾になる子要素<code>.tail</code>を<code>body</code>要素ではなくコンテナである<code>.bubble</code>を基準にして絶対配置できるようになる。<code>.body</code>では吹き出しの前景色と背景色を指定する。ここでは前景色を<code>#ffffff</code>、背景色を<code>#66aa11</code>にした。そして<code>.tail</code>へのスタイル指定で尻尾を作成する。</p>
 

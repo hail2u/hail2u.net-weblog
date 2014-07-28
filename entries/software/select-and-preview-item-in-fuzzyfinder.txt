@@ -4,29 +4,26 @@ FuzzyFinderでプレビューしつつ候補を選択
 
 <p><kbd>&lt;Tab&gt;</kbd>でプレビューしつつ候補を選択する場合は以下のように.vimrcに書く。<kbd>&lt;Tab&gt;</kbd>ダイスキー。</p>
 
-<pre>
-augroup FufAutoCommand
+<pre><code class="language-vim">augroup FufAutoCommand
   autocmd!
 
   autocmd FileType fuf :imap &lt;buffer&gt; &lt;Tab&gt;   &lt;C-n&gt;&lt;C-@&gt;
   autocmd FileType fuf :imap &lt;buffer&gt; &lt;S-Tab&gt; &lt;C-p&gt;&lt;C-@&gt;
 augroup END
-</pre>
+<code></pre>
 
 <p><kbd>&lt;Tab&gt;</kbd>押しっぱなしにしたりすると画面がチラチラ更新されてちょっとうっとうしい……。</p>
 
 <p>これだけだとFuzzyFinderの起動時や候補の絞り込み時に自動的に選択される最初の候補がプレビューされない。そういった時にもプレビューさせるためには<code>autoload/fuf.vim</code>の976行目に以下の一行を追加する必要があるみたい。</p>
 
-<pre>
-call feedkeys(&quot;\&lt;C-@&gt;&quot;)
+<pre>call feedkeys(&quot;\&lt;C-@&gt;&quot;)
 </pre>
 
 <p>また<code>.(g)vimrc</code>に以下のように書いておくと画面が補完メニューとプレビューで埋まってちょっと気持ち良い。</p>
 
-<pre>
-autocmd FileType fuf :setlocal nonumber
+<pre><code class="language-vim">autocmd FileType fuf :setlocal nonumber
 let g:fuf_enumeratingLimit = &amp;lines - 2 - g:fuf_previewHeight
 let g:fuf_maxMenuWidth     = &amp;columns
-</pre>
+</code></pre>
 
 <p>どうでもいい！</p>

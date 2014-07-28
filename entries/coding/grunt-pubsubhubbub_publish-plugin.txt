@@ -22,8 +22,8 @@ grunt.loadNpmTasks(&#39;grunt-pubsubhubbub_publish&#39;);
 
 <p>実行はターゲットを指定して行うことになる。</p>
 
-<pre>$ grunt pubsubhubbub_publish:main
-</pre>
+<pre><samp>$ <kbd>grunt pubsubhubbub_publish:main</kbd>
+</samp></pre>
 
 <p>多くの場合はエイリアス・タスクに組み込んで使うので、このような長いコマンドを使うことはまずない。</p>
 

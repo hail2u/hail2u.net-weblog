@@ -9,23 +9,23 @@ Bashmarks
 
 <p>ブックマークするのは<code>bookmark</code>コマンドです。</p>
 
-<pre>$ bookmark foo
-</pre>
+<pre><samp>$ <kbd>bookmark foo</kbd>
+</samp></pre>
 
 <p>これでカレント・ディレクトリが<code>foo</code>という名前でブックマークされます。入力のしやすさを考慮して小文字でブックマークすると良さそうです。</p>
 
-<pre>$ go foo
-</pre>
+<pre><samp>$ <kbd>go foo</kbd>
+</samp></pre>
 
 <p>とするといつでも移動できるようになります。</p>
 
-<pre>$ bookmarksshow
-</pre>
+<pre><samp>$ <kbd>bookmarksshow</kbd>
+</samp></pre>
 
 <p>でブックマークの一覧が参照できますが、<code>go</code>コマンドには補完機能があるので</p>
 
-<pre>$ go &lt;Tab&gt;&lt;Tab&gt;
-</pre>
+<pre><samp>$ <kbd>go &lt;Tab&gt;&lt;Tab&gt;</kbd>
+</samp></pre>
 
 <p>でも一覧が参照できます。</p>
 

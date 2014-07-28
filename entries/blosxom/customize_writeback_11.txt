@@ -6,8 +6,7 @@ $str =~ s!\t!&lt;br /&gt;!g;
 $str = &quot;&lt;p&gt;$str&lt;/p&gt;&quot;;
 </code></pre>
 <p>というコードで。2個以上の連続した改行を<code>&lt;/p&gt;&lt;p&gt;</code>に変換→残った改行を<code>&lt;br /&gt;</code>に変換→全体を<code>&lt;/p&gt;</code>と<code>&lt;p&gt;</code>要素で括るということですね。</p>
-<pre>
-writebackの新しいマークアップ機能のテストの始まり。
+<pre>writebackの新しいマークアップ機能のテストの始まり。
 
 改行*1はbr要素に、改行*2以上はp要素に変換した上で、最後に全体をp要素で括るというありがちなもの。
 

@@ -15,8 +15,8 @@
 
 <p>コンパイル方法は前のと同じで標準入力と出力で。</p>
 
-<pre>$ gccs.pl &lt;test.js &gt;test.min.js
-</pre>
+<pre><samp>$ <kbd>gccs.pl &lt;test.js &gt;test.min.js</kbd>
+</samp></pre>
 
 <p>肝心のgccs.plは以下の通り。</p>
 

@@ -20,8 +20,8 @@ Aborted due to warnings.
 
 <p>これはv3.4.0.rc.1でライブラリをロードするパスとして入力ファイルと同じディレクトリが含まれなくなったことに起因する問題のようだ。grunt-contrib-sass経由の場合、<code>--load-path</code>が常に指定されて実行されるので起こりやすい。CHANGELOGで触れられているように<code>SASS_PATH</code>という環境変数を設定しておくと落ちなくなる。</p>
 
-<pre>$ export SASS_PATH=<mark>.</mark>
-</pre>
+<pre><samp>$ <kbd>export SASS_PATH=<mark>.</mark></kbd>
+</samp></pre>
 
 <p>Bashの場合は<code>export</code>で、Windowsでコマンド・プロンプトなら<code>set</code>を使う。<code>.bashrc</code>などには書かずにGruntを実行するターミナルなどで設定するのが良さそう。環境変数の有無が問題なような感じなので、<code>.</code>じゃなくても良さそう。</p>
 

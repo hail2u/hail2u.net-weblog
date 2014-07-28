@@ -4,20 +4,17 @@ Twitter APIにおけるリツイート
 
 <p>最新のツイートだけを拾いたかったので、単純に<code>count=1</code>を指定してみた。</p>
 
-<pre>
-http://api.twitter.com/1/statuses/user_timeline.json?screen_name=abcde<em>&amp;count=1</em>
+<pre>http://api.twitter.com/1/statuses/user_timeline.json?screen_name=abcde<em>&amp;count=1</em>
 </pre>
 
 <p>しかし、最新のツイートがリツイートだと返されるJSONが空になる(リツイートではない最新のツイートまで遡ってくれたりはしない)。つまりはusers/showと似たような挙動でこれだけではうまくいかない。空にならないようにするためには、リツイートを含めて返させるように、<code>include_rts</code>パラメータも追加する必要がある。</p>
 
-<pre>
-http://api.twitter.com/1/statuses/user_timeline.json?screen_name=abcde&amp;count=1<em>&amp;include_rts=true</em>
+<pre>http://api.twitter.com/1/statuses/user_timeline.json?screen_name=abcde&amp;count=1<em>&amp;include_rts=true</em>
 </pre>
 
 <p>どうしてもusers/showでリツイートを含めて返して欲しい場合は、JSONではなくXMLで返してもらうと良い。JavaScriptで扱う場合はYQL等を経由することが多いと思うので、JSONとXMLのどちらでも大して変わらないはず。</p>
 
-<pre>
-http://api.twitter.com/1/users/show.<em>xml</em>?screen_name=abcde
+<pre>http://api.twitter.com/1/users/show.<em>xml</em>?screen_name=abcde
 </pre>
 
 <p>認証なしAPIでリツイートを飛ばした最新のツイートだけをサクっと拾う方法はなさそうな感じ。リツイートが後付けの機能だからなのか、パフォーマンスの問題からなのか、この仕様は明文化されてないこととかもあって微妙に困る。</p>

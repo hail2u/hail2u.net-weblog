@@ -4,19 +4,19 @@ gh-pagesのみのリポジトリ
 
 <p>まずGitHub上で<code>blosxom-docs-ja</code>リポジトリを作成する。</p>
 
-<pre>$ cd ~/Projects/blosxom-docs-ja
-$ git init
-$ git branch gh-pages
-$ git remote add origin git@github.com:hail2u/blosxom-docs-ja
-$ git push --all
-</pre>
+<pre><samp>$ <kbd>cd ~/Projects/blosxom-docs-ja</kbd>
+$ <kbd>git init</kbd>
+$ <kbd>git branch gh-pages</kbd>
+$ <kbd>git remote add origin git@github.com:hail2u/blosxom-docs-ja</kbd>
+$ <kbd>git push --all</kbd>
+</samp></pre>
 
 <p>ここでGitHubのリポジトリの管理画面を開いて<code>gh-pages</code>をDefault Branchにする。</p>
 
-<pre>$ git push origin :master
-$ git checkout gh-pages
-$ git branch -d master
-$ git push -u origin gh-pages
-</pre>
+<pre><samp>$ <kbd>git push origin :master</kbd>
+$ <kbd>git checkout gh-pages</kbd>
+$ <kbd>git branch -d master</kbd>
+$ <kbd>git push -u origin gh-pages</kbd>
+</samp></pre>
 
 <p>これで<code>master</code>ブランチがない<code>gh-pages</code>ブランチだけのリポジトリになる。ググらずにやってできちゃったので不安なことこの上ない。</p>

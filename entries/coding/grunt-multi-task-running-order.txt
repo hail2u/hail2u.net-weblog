@@ -24,7 +24,7 @@ GruntのMultiタスクの実行順
 
 <p>以上のように数字をMultiタスクのターゲット名にしてしまうと書いた順にタスクが実行されない。</p>
 
-<pre>$ grunt order
+<pre><samp>$ <kbd>grunt order</kbd>
 Running &quot;order:1&quot; (order) task
 1
 
@@ -40,7 +40,8 @@ Running &quot;order:4&quot; (order) task
 Running &quot;order:5&quot; (order) task
 5
 
-Done, without errors.</pre>
+Done, without errors.
+</samp></pre>
 
 <p>あー……。</p>
 

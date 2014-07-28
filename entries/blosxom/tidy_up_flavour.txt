@@ -1,7 +1,6 @@
 flavourの整理
 <p>昨日、writebackプラグインのflavourは.writeback固定ではないことに気づいたので、put_formsプラグインで埋め込んでやっているform要素のaction属性を、</p>
-<pre>
-$url$path/$fn.$default_flavour
+<pre>$url$path/$fn.$default_flavour
 </pre>
 <p>にしてやって(プラグイン内での指定なので、実際は記述方法はちと違いますが)、通常の閲覧時に遭遇するflavourを.htmlのみにすることにしました。</p>
 <p>すっきり。</p>

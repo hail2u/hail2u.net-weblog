@@ -1,6 +1,5 @@
 WSHを使ってMozillaでHTMLファイルを開く
-<pre>
-Dim Browser, ObjArgs, StrPath, WshShell
+<pre>Dim Browser, ObjArgs, StrPath, WshShell
 
 Browser = &quot;C:\Program Files\Mozilla\mozilla.exe&quot;
 

@@ -6,8 +6,7 @@ Yahoo! Search Web ServicesのJSON(P)を利用したサイト内検索
 
 <p>Yahoo! Search Web ServicesのWeb Search APIへのリクエストは、</p>
 
-<pre>
-http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=<em>{アプリケーションID}</em>&amp;query=<em>{検索語}</em>&amp;site=<em>{ドメイン名}</em>&amp;<em>output=json</em>&amp;<em>callback=handleWebSearch</em>
+<pre>http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=<em>{アプリケーションID}</em>&amp;query=<em>{検索語}</em>&amp;site=<em>{ドメイン名}</em>&amp;<em>output=json</em>&amp;<em>callback=handleWebSearch</em>
 </pre>
 
 <p>という形で、<code>output</code>パラメータで<code>json</code>を指定するとXMLの代わりにJSONで結果を得ることができ、<code>callback</code>パラメータでコールバック関数名を指定すると指定したコールバック関数でpaddingしてくれる(JSONPにしてくれる)。あとはコールバック関数でデータを加工してやれば良い。サンプルでは<a href="http://prototype.conio.net/">prototype.js</a>や自作ライブラリを使ってたりするが、多重リクエストのことなどは考えなくて良いと思われるので、単純に<code>script</code>要素を作成して追加するというコードをベタに書いても問題ないと思う。</p>

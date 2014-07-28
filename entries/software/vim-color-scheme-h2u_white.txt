@@ -21,8 +21,8 @@ Vimカラースキーム: h2u_white
 
 <p>pathogenでサクッと入れられるようにディレクトリ切っておいた。Gistでも普通にディレクトリを切れることを学んだ。Web上でリポジトリ作る時も<a href="http://subtech.g.hatena.ne.jp/secondlife/20101104/1288859350">ファイル名にスラッシュがあるとディレクトリを切ってくれる</a>らしい。Gistすごいな。</p>
 
-<pre>$ git clone git://gist.github.com/187578.git
-</pre>
+<pre><samp>$ <kbd>git clone git://gist.github.com/187578.git</kbd>
+</samp></pre>
 
 <p>で、h2u_darkとかと一緒にインストールできる。<del>VundleとかNeoBundleとかは使ってないので知らない。</del></p>
 

@@ -6,8 +6,7 @@ Firefoxのロケーションバー
 <pre><code class="language-css">http://www.amazon.co.jp/exec/obidos/search-handle-url?field-keywords=%s&amp;index=blended
 </code></pre>
 <p>と入力し、Keywordに、</p>
-<pre>
-azj
+<pre>azj
 </pre>
 <p>と設定すればOKです。</p>
 <p>今までは検索バーを使っていたので、少し便利。検索バーは検索エンジンの切り替えをスムーズに行う方法がわからなくてあまり使ってないす。</p>

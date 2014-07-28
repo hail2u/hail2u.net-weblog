@@ -6,17 +6,15 @@ Web開発周りのVimの設定
 
 <p>tidy.vimが用意されているので、<a href="http://tidy.sourceforge.net/">HTML Tidy</a>をインストールし、.vimrcに以下のように書くだけで良い。</p>
 
-<pre>
-autocmd FileType html :compiler tidy
+<pre><code class="language-vim">autocmd FileType html :compiler tidy
 autocmd FileType html :setlocal makeprg=tidy\ -raw\ -quiet\ -errors\ --gnu-emacs\ yes\ \&quot;%\&quot;
-</pre>
+</code></pre>
 
 <p>tidy.vimの<code>makeprg</code>では日本語が化けるので<code>-raw</code>を追加する。</p>
 
 <h2>HTMLファイルのインデントをやり直す</h2>
 
-<pre>
-gg=G
+<pre>gg=G
 </pre>
 
 <p>ノーマルモードでは<kbd>gg</kbd>でファイルの先頭に移動して<kbd>=G</kbd>でファイル全体をインデントし直すことができる。選択範囲のみをインデントし直す場合は、適当にビジュアルモードで選択した状態で<kbd>=</kbd>を押すだけ。1000行とかあるHTMLファイルだと結構時間がかかる。デフォルトではJavaScriptファイルでやると残念な結果に……。</p>
@@ -25,8 +23,7 @@ gg=G
 
 <p>FirefoxやSafari、Chromeは普通にインストールするとApp Pathsに登録されるので、</p>
 
-<pre>
-:! start chrome.exe %
+<pre>:! start chrome.exe %
 :! start firefox.exe %
 :! start IEXPLORE.EXE %
 :! start Safari.exe %
@@ -36,8 +33,7 @@ gg=G
 
 <p>OperaのインストーラはApp Pathsに登録しないので、</p>
 
-<pre>
-REGEDIT4
+<pre>REGEDIT4
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\opera.exe]
 @=&quot;C:\\Program Files\\Opera\\opera.exe&quot;
@@ -62,15 +58,13 @@ print encode_entities(join(&#39;&#39;, &lt;STDIN&gt;), &#39;&amp;&lt;&gt;&quot;\
 
 <p>その上でコマンドを作成。</p>
 
-<pre>
-command! -range EncodeEntities :&#39;&lt;,&#39;&gt;!perl -S encode-entities.pl
-</pre>
+<pre><code class="language-vim">command! -range EncodeEntities :&#39;&lt;,&#39;&gt;!perl -S encode-entities.pl
+</code></pre>
 
 <h2>W3CDTFで日付と時刻の挿入</h2>
 
-<pre>
-command! InsertDateTime :execute &quot;normal! i&quot;.strftime(&quot;%Y-%m-%dT%H:%M:%S+09:00&quot;)
-</pre>
+<pre><code class="language-vim">command! InsertDateTime :execute &quot;normal! i&quot;.strftime(&quot;%Y-%m-%dT%H:%M:%S+09:00&quot;)
+</code></pre>
 
 <p>必要な人は少ないだろうけど。</p>
 
@@ -78,9 +72,8 @@ command! InsertDateTime :execute &quot;normal! i&quot;.strftime(&quot;%Y-%m-%dT%
 
 <p><a href="http://www.vim.org/scripts/script.php?script_id=1577">css.vim</a>をダウンロードしてインストールする。</p>
 
-<pre>
-autocmd FileType css :compiler css
-</pre>
+<pre><code class="language-vim">autocmd FileType css :compiler css
+</code></pre>
 
 <p>同梱のPerlスクリプト(validate_css)はパスの通ったディレクトリにコピーする必要がある。</p>
 
@@ -88,7 +81,7 @@ autocmd FileType css :compiler css
 
 <p><a href="http://www.javascriptlint.com/">JavaScript Lint</a>をインストールし、javascriptlint.vimとして以下のファイルを<code>$HOME/.vim/compiler</code> (Windowsでは<code>$HOME/vimfiles/compiler</code>)以下に作成する。</p>
 
-<pre>
+<pre><code class="language-vim">
 if exists(&quot;current_compiler&quot;)
   finish
 endif
@@ -108,13 +101,12 @@ CompilerSet errorformat=%f(%l):\ %m
 
 let &amp;cpo = s:cpo_save
 unlet s:cpo_save
-</pre>
+</code></pre>
 
 <p>そして.vimrcに以下のように書く。</p>
 
-<pre>
-autocmd FileType javascript :compiler javascriptlint
-</pre>
+<pre><code class="language-vim">autocmd FileType javascript :compiler javascriptlint
+</code></pre>
 
 <h2>JavaScriptファイルのインデントの改善</h2>
 

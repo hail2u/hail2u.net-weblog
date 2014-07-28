@@ -74,9 +74,8 @@ sub compile {
 
 <p>使い方は、</p>
 
-<pre>
-$ gccs.pl &lt; original.js &gt; compiled.js
-</pre>
+<pre><samp>$ <kbd>gccs.pl &lt; original.js &gt; compiled.js</kbd>
+</samp></pre>
 
 <p>コンパイルするfoobar.jsにはコンパイル設定を書くこともできる(設定を書かなくても圧縮される)。設定は以下のようにコメントとして記述(ウェブUIと同じ)。</p>
 
@@ -108,8 +107,7 @@ $(function () {
 
 <p>Vimから簡単に使えるように<code>$MYVIMRC</code>には以下のように書いた。</p>
 
-<pre>
-&quot; Compile JavaScript file with Google Closure Compiler Service
+<pre><code class="language-vim">&quot; Compile JavaScript file with Google Closure Compiler Service
 &quot; :GCCS [&lt;path&gt;]
 command! -nargs=? -complete=file GCCS :call s:CompileScript(&#39;&lt;args&gt;&#39;)
 
@@ -122,6 +120,6 @@ function! s:CompileScript(file)
     execute &#39;!perl -S gccs.pl &lt; &#39; . expand(&#39;%&#39;) . &#39; &gt; &#39; . a:file
   endif
 endfunction
-</pre>
+</code></pre>
 
 <p>コマンド<code>GCCS</code>にファイルのパスが渡されたらそのファイルに出力、そうでない場合は全選択して差し替えるというもの。</p>

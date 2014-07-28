@@ -6,14 +6,12 @@ lorempixel
 
 <p>クエリーは非常に簡単で、横320px・縦180pxのランダムな画像が欲しいなら以下のようにする。</p>
 
-<pre>
-http://lorempixel.com/320/180/
+<pre>http://lorempixel.com/320/180/
 </pre>
 
 <p>このエントリの最初の画像はこのクエリーでリクエストしたもの。<ins>指定できる縦横のサイズは最大1920pxまでのようだ。</ins>縦横のサイズ以外にもいくつかパラメーターがあり、</p>
 
-<pre>
-http://lorempixel.com/320/180/<em>abstract</em>/
+<pre>http://lorempixel.com/320/180/<em>abstract</em>/
 </pre>
 
 <p>とテーマ名を最後に付けると、</p>
@@ -22,8 +20,7 @@ http://lorempixel.com/320/180/<em>abstract</em>/
 
 <p>テーマで絞り込みができる。</p>
 
-<pre>
-http://lorempixel.com/<em>g</em>/320/180/
+<pre>http://lorempixel.com/<em>g</em>/320/180/
 </pre>
 
 <p>縦横サイズの前に<code>g</code>を挟むと、</p>

@@ -46,12 +46,10 @@ if (sExtsList) {
 WScript.Quit();
 </code></pre>
 <p>使い方は、コマンドプロンプトでfxexts.jsを保存したフォルダに移動し、</p>
-<pre>
-cscript.exe //Nologo fxexts.js &lt;Extensions.rdfのパス&gt;
-</pre>
+<pre><samp>C:&gt; <kbd>cscript.exe //Nologo fxexts.js &lt;Extensions.rdfのパス&gt;</kbd>
+</samp></pre>
 <p>とすると、標準出力にそのまま単純なリストが出力されます(わかりづら)。出力例はこんな感じ。</p>
-<pre>
-Firefox installed Extensions
+<pre>Firefox installed Extensions
 ========================================
 LiveHTTPHeaders version 0.9
 http://livehttpheaders.mozdev.org/

@@ -4,8 +4,8 @@ OptiPNGにメタデータ削除機能が付いた
 
 <p>オプション名は<code>-strip</code>で、それに続けて削除したいチャンク名を指定する……ということになっているが、今のところは<code>all</code>というキーワードでの全削除しかできないようで、これとこれだけ削除とかはできない。</p>
 
-<pre>$ optipng -strip all test.png
-</pre>
+<pre><samp>$ <kbd>optipng -strip all test.png</kbd>
+</samp></pre>
 
 <p>ざっと試した所、pHYs(アスペクト比やDPI)やiCCP(カラープロフィール)、cHRM(ホワイトバランス)あたりは削除されたので、オプションから想像できる通り必須チャンクとtRNS以外を削除するんじゃないかと思う。つまりpngcrushで言うところの<code>-rem allb</code>相当な感じなので、これをメインに使っていた僕はpngcrush捨てられそう。</p>
 

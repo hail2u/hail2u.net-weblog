@@ -4,8 +4,7 @@
 
 <p>圧縮フォルダ機能の解除の方法は、コマンド プロンプトで、</p>
 
-<pre>
-regsvr32 /u zipfldr.dll
+<pre>regsvr32 /u zipfldr.dll
 regsvr32 /u cabview.dll
 </pre>
 
@@ -17,8 +16,7 @@ regsvr32 /u cabview.dll
 
 <p>元に戻したくなったら、</p>
 
-<pre>
-regsvr32 zipfldr.dll
+<pre>regsvr32 zipfldr.dll
 regsvr32 cabview.dll
 </pre>
 

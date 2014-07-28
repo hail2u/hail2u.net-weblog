@@ -4,8 +4,7 @@ fenrirでTabを項目選択に使う
 
 <p>fenrirが起動中なら一旦終了させて、INIファイル(fenrirをインストールしたフォルダの<code>data/fenrir.ini</code>)を開き、<code>KeyListCursorUp</code>と<code>KeyListCursorDown</code>を以下のように書き換える。</p>
 
-<pre>
-KeyListCursorUp=265
+<pre>KeyListCursorUp=265
 KeyListCursorDown=9
 </pre>
 

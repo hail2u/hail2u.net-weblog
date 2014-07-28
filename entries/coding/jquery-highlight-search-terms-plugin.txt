@@ -19,7 +19,7 @@ $(&quot;body&quot;).highlightSearchTerms({
   ],
   unsafeChars: &quot;[!-*,-/:-@[-`{-~]&quot;
 });
-</pre>
+</code></pre>
 
 <p>このように指定することができる。</p>
 

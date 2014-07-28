@@ -4,12 +4,12 @@ VBScriptでMSN Messengerの表示アイコンを変更する
 
 <p>コードは、</p>
 
-<pre class="code">
+<pre><code class="language-vb">
 Dim objMessenger
 
 Set objMessenger = WScript.CreateObject(&quot;Messenger.UIAutomation.1&quot;)
 objMessenger.MyProperty(2) = &quot;C:\path\to\image.jpg&quot;
-</pre>
+</code></pre>
 
 <p>これだけ！これだけで指定した画像に挿し変わる。</p>
 

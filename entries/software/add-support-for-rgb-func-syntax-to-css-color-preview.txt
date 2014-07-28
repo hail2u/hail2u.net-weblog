@@ -16,8 +16,7 @@ CSS color previewをrgb()に対応させた
 
 <p>最近、</p>
 
-<pre>
-set guifont=DejaVu_Sans_Mono:h12:w6
+<pre>set guifont=DejaVu_Sans_Mono:h12:w6
 </pre>
 
 <p>でgVimを使っているのだけどなかなか良い。上のプレビュー画像もこれ。デフォルトでは幅広すぎてちょっとかっこ悪い感じだけど<code>w6</code>にするとスマート。</p>

@@ -7,8 +7,7 @@ ping flavour
 <li>pluginを置くディレクトリに、excerptをコピー</li>
 </ul>
 <p>するだけです。TrackBackの送信は、</p>
-<pre>
-http://example.com/blog/blosxom.cgi/path/to.entry.ping
+<pre>http://example.com/blog/blosxom.cgi/path/to.entry.ping
 </pre>
 <p>というようなURLにアクセスすると、フォームを埋めた状態でページが開くので、TrackBack送信先URLを入力して、TrackBackボタンを押すだけ。あらかじめクリップボードにTrackBack送信先URLを入れておくと、ページを開いた時にそのURLも入力済みになるので、ボタンを押すだけになります。</p>
 <p>説明すげぇ下手だ。</p>

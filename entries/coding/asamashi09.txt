@@ -10,11 +10,10 @@ Asamashi09
 
 <p>新しくファイルを作った後の<code>git commit -a</code>の前に<code>git add .</code>するのをすぐ忘れるんですがどうすれば良いですか？</p>
 
-<pre>
-$ git commit -a
-$ git reset --soft
-$ git add .
-$ git commit -a
-</pre>
+<pre><samp>$ <kbd>git commit -a</kbd>
+$ <kbd>git reset --soft</kbd>
+$ <kbd>git add .</kbd>
+$ <kbd>git commit -a</kbd>
+</samp></pre>
 
 <p>とか毎回のようにやってる気がする。</p>

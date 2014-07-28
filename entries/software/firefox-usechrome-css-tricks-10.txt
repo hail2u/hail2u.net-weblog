@@ -8,8 +8,7 @@ FirefoxのuserChrome.cssネタ #10
 <p>単にURLを開くというわけではないBookmarkletは違うアイコンの方が良いだろうと。視認性は大幅に向上しました。これを導入した上で、よく使うBookmarkletは<a href="https://addons.mozilla.org/extensions/moreinfo.php?application=firefox&amp;id=325" title="Mozilla Update :: Extensions -- More Info:Favicon Picker - All Releases">Favicon Picker</a>を使ってまた違うアイコンにしたりとかするともっと良いかも。</p>
 <figure><img src="/images/blog/firefox-usechrome-css-tricks-10.png" alt="Bookmarkletのアイコンを実行ファイルっぽいアイコンにしてみた"></figure>
 <p>アイコンに指定したbookmarklet.pngは自分で用意しないとなりません。</p>
-<pre>
-chrome://global/skin/icons/folder-item.png
+<pre>chrome://global/skin/icons/folder-item.png
 </pre>
 <p>をベースにして作るのが手っ取り早いです。置く場所はuserChrome.cssと同じ場所。</p>
 <h2>追記</h2>

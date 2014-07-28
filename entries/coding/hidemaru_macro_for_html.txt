@@ -1,6 +1,5 @@
 秀丸マクロ
-<pre>
-$fExt = &quot;&quot;;
+<pre>$fExt = &quot;&quot;;
 
 $srBuf = searchbuffer;
 #srOpt = searchoption;

@@ -31,17 +31,17 @@ phantom.exit();
 
 <p>あとは<code>CSSLint.verify()</code>するだけ！オプションを指定する場合はここで指定してやればいいので、引数でオプションを設定できるようにするのもそんなに難しくない……というかNode向けのCLIスクリプトからコピペするだけで動きそうです。</p>
 
-<pre>$ phantomjs /path/to/csslint-phantomjs.js style.css
-</pre>
+<pre><samp>$ <kbd>phantomjs /path/to/csslint-phantomjs.js style.css</kbd>
+</samp></pre>
 
 <p>あとはこのようにCSSファイルを引数にして実行してやれば叱ってくれます。</p>
 
-<pre>style.css:7:1:Don't use IDs in selectors.
+<pre><samp>style.css:7:1:Don't use IDs in selectors.
 style.css:15:1:Don't use IDs in selectors.
 style.css:21:1:Don't use IDs in selectors.
 style.css:30:1:Don't use IDs in selectors.
 style.css:35:1:Don't use IDs in selectors.
-</pre>
+</samp></pre>
 
 <p>うるさいよ。</p>
 

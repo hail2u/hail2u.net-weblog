@@ -16,8 +16,7 @@ return tmpl.evaluate({
 
 <p>と、テンプレートを渡して初期化し、データを渡して<code>evaluate()</code>(つまりprototype.jsのTemplateクラスと一緒)。データはフラットな連想配列で、<a href="http://json.org/" title="Introducing JSON">JSON</a>というわけではない。テンプレートはinterpolate_fancyと一緒、といってもほとんどの人は知らないのでちょこっと書いておく。</p>
 
-<pre>
-&lt;foo/&gt; display &quot;foo&quot;
+<pre>&lt;foo/&gt; display &quot;foo&quot;
 
 &lt;?foo&gt;display if &quot;foo&quot; is defined&lt;/?&gt;
 &lt;?!foo&gt;display if &quot;foo&quot; is not defined&lt;/?&gt;

@@ -31,8 +31,7 @@ box-shadowとradial-gradientで画像をポラロイド写真風に
 
 <p><code>box-shadow</code>の文法は以下の通りで、<code>text-shadow</code>との違いは<code>inset</code>で内側に影を作れることと、ぼかし以外に影のサイズを微調整することができること。</p>
 
-<pre>
-box-shadow: inset? &lt;offset-x&gt; &lt;offset-y&gt; &lt;blur-radius&gt;? &lt;spread-radius&gt;? &lt;color&gt;?;
+<pre>box-shadow: inset? &lt;offset-x&gt; &lt;offset-y&gt; &lt;blur-radius&gt;? &lt;spread-radius&gt;? &lt;color&gt;?;
 </pre>
 
 <p>ここではぼかしを40pxにしたがもっと少なくてもいいかもしれないが、少ないと縁が黒くなった感よりも凹んでいる感が強くなってしまう気がする。影の色はある程度透過させた色を指定しないと縁が真っ黒になってしまうので注意。</p>

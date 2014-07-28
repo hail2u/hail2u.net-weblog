@@ -10,6 +10,7 @@ grunt-initがWindowsでCR+LFなファイルを作ってしまう
 
 <hr>
 
-<pre>$ find . -type f | xargs dos2unix -Uv</pre>
+<pre><samp>$ <kbd>find . -type f | xargs dos2unix -Uv</kbd>
+</samp></pre>
 
 <p>何かしら本体で対策が成されるまでは、<code>grunt-init foo</code>した後に続けて、<code>dos2unix</code>を叩いて凌ぐことにした。</p>
