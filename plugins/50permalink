@@ -6,7 +6,7 @@
 package permalink;
 
 use strict;
-use vars qw($is_permalink $title $title_sep $description);
+use vars qw($is_permalink $title $title_sep $description $class);
 
 # --- Configurable variables -----------
 
@@ -18,8 +18,10 @@ my $str_title_sep = " - ";
 $is_permalink = 0;
 my $title_placeholder = '{{{permalink::title}}}';
 my $description_placeholder = '{{{permalink::description}}}';
+my $class_placeholder = '{{{permalink::class}}}';
 my $t;
 my $d;
+my $c = 'permalink';
 
 # --------------------------------------
 
@@ -34,6 +36,7 @@ sub start {
   $title_sep = $str_title_sep;
   $title = $title_placeholder;
   $description = $description_placeholder;
+  $class = $class_placeholder;
 
   return 1;
 }
@@ -50,12 +53,18 @@ sub story {
   $d =~ s!<.*?>!!g;
   $d =~ s!"!&quot;!g;
 
+  if ($$body_ref =~ m!^\s*<figure>!) {
+    $$body_ref =~ s/<figure>/<figure class="full-width">/;
+    $c .= ' has-image';
+  }
+
   return 1;
 }
 
 sub last {
   $blosxom::output =~ s/$title_placeholder/$t/gm;
   $blosxom::output =~ s/$description_placeholder/$d/gm;
+  $blosxom::output =~ s/$class_placeholder/$c/gm;
 }
 
 1;
