@@ -5,7 +5,7 @@ WindowsのVimで開いているファイルを関連付けにしたがって開�
 <p><kbd>&lt;Leader&gt;o</kbd>とかにキー割り当てすると良さそう。空白を含むパスへの対策に二重引用符でくくっておく。</p>
 
 <pre><code class="language-vim">nnoremap &lt;Leader&gt;o :!start cmd /c &quot;%&quot;
-</code?</pre>
+</code></pre>
 
 <p>quickrunを使っていて、HTMLファイルをデフォルトのブラウザで開きたい場合は、<code>$HOME/vimfiles/after/ftplugin/html.vim</code>で以下のように設定するとうまくいく……と思う。</p>
 
