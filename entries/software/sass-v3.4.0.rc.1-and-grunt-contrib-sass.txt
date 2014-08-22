@@ -47,3 +47,7 @@ Aborted due to warnings.
 <hr>
 
 <p>とりあえず手元の環境ではちゃんと動くようにできたので、今のところはまぁ良いかという感じ。<code>--sourcemap=auto</code>とかへの対応はSass側で修正されそうな気がするので、焦ってプルリクエスト送らない方が良さそうとも思ってる。</p>
+
+<h2>追記</h2>
+
+<p><a href="https://github.com/gruntjs/grunt-contrib-sass/releases/tag/v0.8.0">grunt-contrib-sassのv0.8.0</a>がリリースされ、Sass v3.4.0がサポートされた。上記の問題は解決したが、代わりにv3.3.14以下でSource Mapを出力することはできなくなったことには注意が必要。</p>
