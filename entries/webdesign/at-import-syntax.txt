@@ -1,0 +1,27 @@
+@importの文法
+
+<p><code>@import</code>では何の気なしに<code>url()</code>を使わず書いていたんだけど、どんな時もそれで良いのかよく知らなかった。どうやら<a href="http://www.w3.org/TR/CSS2/cascade.html#at-import">文字列で書くとそれを<code>url()</code>で括ったように解釈してくれると仕様で決められている</a>ようだ。</p>
+
+<p>ということで以下の7パターンはすべて同じように解釈される。</p>
+
+<pre><code class="language-css">@import url(foo.css);
+@import url(&quot;foo.css&quot;);
+@import url(&#39;foo.css&#39;);
+@import &quot;foo.css&quot;;
+@import &#39;foo.css&#39;;
+@import&quot;foo.css&quot;;
+@import&#39;foo.css&#39;;
+</code></pre>
+
+<p>CSSWringでは<code>url()</code>を外して二重引用符に統一し、直後の空白を削除することにした。</p>
+
+<hr>
+
+<p><code>@import</code>絡みではもうひとつちょっとよくわからないところがあって、<code>@import</code>だけのCSSの場合に最後のセミコロンが必要なのかどうかという点。<a href="/pub/test/587.html">現状の実装では省略しても読めるみたい</a>だけど、<a href="http://www.w3.org/TR/CSS2/grammar.html#grammar">仕様の文法</a>では以下のようになっていて省略できないように読める。</p>
+
+<pre><code class="language-yacc">import
+  : IMPORT_SYM S*
+    [STRING|URI] S* media_list? &lt;mark&gt;&#39;;&#39;&lt;/mark&gt; S*
+</code></pre>
+
+<p>W3C CSS 検証サービスでも文法解析エラーになるので、省略できないことになっているということは意識はしておいた方が良さそう。</p>
