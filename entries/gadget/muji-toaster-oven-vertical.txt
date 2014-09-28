@@ -1,6 +1,6 @@
 無印良品 オーブントースター・縦型
 
-<figure>
+<figure class="floatage-right">
   <a href="http://www.muji.net/store/cmdty/detail/4934761152691"><img src="/images/blog/muji-toaster-oven-vertical.png" alt="オーブントースター・縦型"></a>
 </figure>
 

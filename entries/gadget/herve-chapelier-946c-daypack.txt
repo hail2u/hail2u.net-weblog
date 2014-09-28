@@ -1,6 +1,6 @@
 Hervé Chapelier 946C ナイロンデイパック
 
-<figure>
+<figure class="floatage-right">
   <img src="/images/blog/herve-chapelier-946c-daypack.png" alt="Hervé Chapelier 946C ナイロンデイパック">
 </figure>
 

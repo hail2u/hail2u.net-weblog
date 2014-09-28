@@ -1,6 +1,6 @@
 I'm 414, not 360.
 
-<figure>
+<figure class="floatage-right">
   <img src="/images/blog/im-414-not-360.png" alt="I'm 414, not 360.">
 </figure>
 
