@@ -53,7 +53,7 @@ sub story {
   $d =~ s!<.*?>!!g;
   $d =~ s!"!&quot;!g;
 
-  if ($$body_ref =~ m!^\s*<figure!) {
+  if ($$body_ref =~ m!^\s*<figure>!) {
     $$body_ref =~ s/^\s*<figure>/<figure class="full-width">/;
     $c .= ' has-image';
   }
